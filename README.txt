@@ -1,0 +1,1 @@
+Soul OS V3 fixed multi-page website. Open index.html and enter LOVEYAN.

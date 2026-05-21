@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="zh-Hant" class="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Soul OS｜占星矩陣 Astrology</title>
+<style>
+:root{--bg1:#edf1f4;--bg2:#cad7df;--ink:#12202e;--muted:#546473;--glass:rgba(255,255,255,.58);--glass2:rgba(255,255,255,.31);--line:rgba(255,255,255,.56);--accent:#7da1b8;--shadow:0 26px 90px rgba(26,43,58,.16)}
+html.dark{--bg1:#03050b;--bg2:#111b2b;--ink:#f7f9fc;--muted:#b4bfca;--glass:rgba(12,19,31,.66);--glass2:rgba(255,255,255,.075);--line:rgba(255,255,255,.14);--accent:#9ed0e5;--shadow:0 28px 90px rgba(0,0,0,.46)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC","Noto Sans SC","PingFang TC","Microsoft JhengHei",Arial,sans-serif;background:radial-gradient(circle at 12% 6%,rgba(255,255,255,.75),transparent 25%),radial-gradient(circle at 82% 10%,rgba(126,173,199,.35),transparent 28%),radial-gradient(circle at 52% 95%,rgba(192,150,210,.18),transparent 25%),linear-gradient(135deg,var(--bg1),var(--bg2));min-height:100vh;transition:.35s}html.dark body{background:radial-gradient(circle at 12% 6%,rgba(80,120,150,.20),transparent 25%),radial-gradient(circle at 82% 10%,rgba(130,92,170,.16),transparent 28%),radial-gradient(circle at 52% 95%,rgba(88,130,190,.13),transparent 25%),linear-gradient(135deg,var(--bg1),var(--bg2))}body:before{content:"";position:fixed;inset:10px;border-radius:34px;pointer-events:none;box-shadow:inset 0 0 34px rgba(235,244,248,.36);animation:pulse 5s infinite;z-index:0}@keyframes pulse{50%{box-shadow:inset 0 0 78px rgba(235,244,248,.62)}}a{color:inherit;text-decoration:none}.page{position:relative;z-index:1}.topbar{position:sticky;top:14px;z-index:50;width:min(1320px,calc(100% - 28px));margin:14px auto 0;border:1px solid var(--line);background:var(--glass);backdrop-filter:blur(24px);border-radius:999px;box-shadow:var(--shadow)}.topinner{display:flex;align-items:center;gap:12px;padding:12px 14px}.logo{font-weight:950;letter-spacing:.22em;white-space:nowrap;padding:10px 14px}.nav{display:flex;gap:4px;align-items:center;justify-content:center;flex:1}.nav a{font-size:12px;padding:9px 10px;border-radius:999px;color:var(--muted)}.nav a:hover,.nav a.active{background:var(--glass2);color:var(--ink)}.btn,.pill{border:1px solid var(--line);background:var(--glass2);color:var(--ink);border-radius:999px;padding:10px 14px;font-weight:850;cursor:pointer}.mobile{display:none}.drawer{display:none;position:fixed;inset:0;background:rgba(0,0,0,.50);z-index:80}.drawer.open{display:block}.drawer-panel{height:100%;width:min(86vw,390px);overflow:auto;background:rgba(7,12,22,.92);backdrop-filter:blur(24px);color:white;padding:22px}.drawer-panel a{display:block;border:1px solid rgba(255,255,255,.12);border-radius:18px;margin:8px 0;padding:14px 16px}.container{width:min(1280px,calc(100% - 32px));margin:0 auto;padding:56px 0 96px}.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:22px;margin-bottom:22px}.glass,.card{border:1px solid var(--line);background:var(--glass);backdrop-filter:blur(24px);box-shadow:var(--shadow);border-radius:34px;padding:30px}.kicker{font-size:12px;letter-spacing:.42em;text-transform:uppercase;color:var(--accent);font-weight:950}h1{font-size:clamp(46px,7vw,94px);line-height:.9;margin:18px 0;font-weight:950;letter-spacing:-.06em}h2{font-size:clamp(28px,4vw,50px);line-height:1.05;margin:0 0 18px;font-weight:950;letter-spacing:-.04em}h3{font-size:22px;margin:0 0 12px}p{color:var(--muted);line-height:1.9}.lead{font-size:18px;color:var(--muted)}.chips,.mini-nav{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}.chip,.mini-nav a{border:1px solid var(--line);background:var(--glass2);border-radius:999px;padding:9px 13px;font-weight:850;font-size:13px}.section-title{display:flex;align-items:end;justify-content:space-between;gap:16px;margin:38px 0 16px}.badge{font-size:12px;border:1px solid var(--line);border-radius:999px;padding:7px 10px;color:var(--accent);font-weight:900;white-space:nowrap}.grid{display:grid;gap:18px}.two{grid-template-columns:1fr 1fr}.three{grid-template-columns:repeat(3,1fr)}.bento{display:grid;grid-template-columns:repeat(12,1fr);gap:18px}.span4{grid-column:span 4}.span6{grid-column:span 6}.span8{grid-column:span 8}.span12{grid-column:span 12}.callout{border-left:4px solid var(--accent);padding:16px 18px;background:var(--glass2);border-radius:20px;color:var(--muted);line-height:1.85}table{width:100%;border-collapse:separate;border-spacing:0;overflow:hidden;border-radius:24px;border:1px solid var(--line);background:var(--glass2)}th,td{padding:14px 15px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line);line-height:1.65}th{font-size:12px;letter-spacing:.15em;text-transform:uppercase;color:var(--accent)}tr:last-child td{border-bottom:0}td{color:var(--muted)}td:first-child{color:var(--ink);font-weight:850}.accordion{overflow:hidden;border:1px solid var(--line);background:var(--glass);backdrop-filter:blur(20px);border-radius:28px}.acc-btn{width:100%;border:0;background:transparent;color:var(--ink);padding:20px 22px;text-align:left;display:flex;justify-content:space-between;gap:14px;cursor:pointer}.acc-title{font-size:20px;font-weight:950}.acc-sub{font-size:13px;color:var(--muted);margin-top:4px}.acc-icon{width:34px;height:34px;display:grid;place-items:center;border:1px solid var(--line);border-radius:50%;flex:none;transition:.3s}.accordion.open .acc-icon{transform:rotate(45deg)}.acc-content{display:none;padding:0 22px 22px}.accordion.open .acc-content{display:block}.note{font-size:13px;color:var(--muted)}.float{position:fixed;right:18px;bottom:18px;z-index:70;width:54px;height:54px;border-radius:50%;border:1px solid var(--line);background:var(--glass);backdrop-filter:blur(20px);color:var(--ink);font-size:22px;box-shadow:var(--shadow);cursor:pointer}@media(max-width:1180px){.nav{display:none}.mobile{display:inline-flex}.hero,.two,.three{grid-template-columns:1fr}.bento{grid-template-columns:1fr}.span4,.span6,.span8,.span12{grid-column:span 1}.topbar{border-radius:28px}}@media(max-width:720px){body:before{inset:4px;border-radius:24px}.container{width:min(100% - 22px,680px);padding-top:26px}.glass,.card{padding:22px;border-radius:28px}.topinner{justify-content:space-between}.logo{letter-spacing:.14em}h1{font-size:46px}.lead{font-size:15px}th,td{display:block;width:100%}th{display:none}td{border-bottom:0;padding:8px 14px}tr{display:block;border-bottom:1px solid var(--line);padding:8px 0}tr:last-child{border-bottom:0}}
+</style>
+</head>
+<body>
+<div class="page">
+<header class="topbar"><div class="topinner"><button class="btn mobile" id="openDrawer">☰</button><a class="logo" href="home.html">SOUL OS</a><nav class="nav"><a href="home.html">整合大廳</a><a class="active" href="astrology.html">占星矩陣</a><a href="ziwei.html">紫微斗數</a><a href="numerology.html">生命靈數</a><a href="humandesign.html">人類圖</a><a href="maya.html">瑪雅曆</a><a href="mansions.html">二十八星宿</a><a href="qizheng-bazi.html">七政八字</a><a href="crossover.html">交叉比對</a><a href="undertow.html">暗流湧動</a><a href="peak.html">慾望巔峰</a><a href="strategy.html">2026</a><a href="defense.html">防禦</a><a href="refinement.html">煉金</a><a href="nucleus.html">Nucleus</a></nav><button class="btn" id="langBtn">繁</button><button class="btn" id="themeBtn">天蠍黑</button></div></header>
+<div class="drawer" id="drawer"><div class="drawer-panel"><button class="btn" id="closeDrawer">× 關閉</button><a href="home.html">整合大廳</a><a href="astrology.html">占星矩陣</a><a href="ziwei.html">紫微斗數</a><a href="numerology.html">生命靈數</a><a href="humandesign.html">人類圖</a><a href="maya.html">瑪雅曆</a><a href="mansions.html">二十八星宿</a><a href="qizheng-bazi.html">七政八字</a><a href="crossover.html">交叉比對</a><a href="undertow.html">暗流湧動</a><a href="peak.html">慾望巔峰</a><a href="strategy.html">2026</a><a href="defense.html">防禦</a><a href="refinement.html">煉金</a><a href="nucleus.html">全數據倉庫</a></div></div>
+
+<main class="container">
+<section class="hero">
+  <div class="glass">
+    <div class="kicker">Astrology Matrix / Revamped v2</div>
+    <h1>占星矩陣</h1>
+    <p class="lead">已補回第 11 宮、完整 12 宮宮主星飛宮，並把占星結論擴展成深度章節。這頁不做 Prompt Generator，只做 Howard 的占星檔案館。</p>
+    <div class="chips"><span class="chip">夜間盤</span><span class="chip">太陽天秤五宮</span><span class="chip">月水金天蠍六宮</span><span class="chip">上升金牛</span><span class="chip">第 11 宮補回</span><span class="chip">12 宮飛宮補齊</span></div>
+  </div>
+  <div class="glass">
+    <h3>這個 Topic 點睇</h3>
+    <p>占星先看古典骨架，再看行星落宮、宮位、宮主星飛宮，最後看相位如何互相拉扯。心理分析和結論要建基於前面數據，而不是直接講性格。</p>
+    <div class="mini-nav"><a href="#classical">古典</a><a href="#planets">行星</a><a href="#houses">宮位</a><a href="#rulers">飛宮</a><a href="#aspects">相位</a><a href="#analysis">結論</a></div>
+  </div>
+</section>
+
+<section class="bento">
+  <div class="card span4"><div class="kicker">Core</div><h3>核心公式</h3><p>外在金牛穩定，太陽天秤追求體面與舞台，月水金天蠍六宮則把情緒、工作、健康和控制感綁在一起。</p></div>
+  <div class="card span4"><div class="kicker">Pressure</div><h3>壓力主機房</h3><p>第 1 宮土木雙子令自我腦內壓力很大；第 6 宮天蠍群星令日常、工作和身體成為情緒出口。</p></div>
+  <div class="card span4"><div class="kicker">Community</div><h3>第 11 宮不是空白</h3><p>第 11 宮雖無主要行星，但宮主星把社群願景導向第 1 宮與第 9 宮：個人品牌、知識、信念和遠方視野會吸引受眾。</p></div>
+</section>
+
+<div class="section-title" id="classical"><h2>一、古典占星骨架</h2><span class="badge">Sect / Dignity / Elements</span></div>
+<section class="grid two">
+  <div class="card"><h3>先看什麼？</h3><p>Howard 是夜間盤，所以月亮成為主光；但月亮落天蠍第 6 宮且落陷，代表情緒雷達很強，也容易被日常壓力啟動。土星落第 1 宮，令自我形象和表現焦慮更重。</p><div class="callout">判斷：夜間盤；月亮為 Sect Light；金星是夜間吉星；土星是較難處理的壓力星；風高、水高、火低，固定宮強。</div></div>
+  <div class="card"><table><thead><tr><th>項目</th><th>資料</th><th>解讀</th></tr></thead><tbody><tr><td>日夜盤</td><td>夜間盤</td><td>以月亮作主光。</td></tr>
+<tr><td>主光</td><td>月亮天蠍六宮</td><td>情緒、身體、日常壓力成為命盤核心。</td></tr>
+<tr><td>夜間吉星</td><td>金星天蠍六宮</td><td>失勢但仍是連結、審美和照顧能力來源。</td></tr>
+<tr><td>夜間壓力星</td><td>土星雙子一宮</td><td>自我要求、語言焦慮、表現壓力。</td></tr>
+<tr><td>元素</td><td>風高、水高、火低</td><td>想很多、感很多，但啟動火力需要設計。</td></tr>
+<tr><td>模式</td><td>固定宮強</td><td>耐力強、固執、難放手。</td></tr>
+</tbody></table></div>
+</section>
+
+<div class="section-title" id="planets"><h2>二、行星落座落宮</h2><span class="badge">Planetary Placements</span></div>
+<section class="card"><table><thead><tr><th>行星</th><th>星座度數</th><th>宮位</th><th>狀態</th><th>解讀</th></tr></thead><tbody><tr><td>太陽</td><td>天秤座 7°38′</td><td>第 5 宮</td><td>落陷</td><td>自我表達、創造、戀愛、舞台感；但自我認同容易受他人眼光影響。</td></tr>
+<tr><td>月亮</td><td>天蠍座 11°33′</td><td>第 6 宮</td><td>落陷／夜間盤主光</td><td>情緒與日常壓力、工作細節、健康節奏深度綁定。</td></tr>
+<tr><td>水星</td><td>天蠍座 2°23′</td><td>第 6 宮</td><td>中性</td><td>思考深、懷疑強、擅長看穿漏洞與隱藏動機。</td></tr>
+<tr><td>金星</td><td>天蠍座 7°10′</td><td>第 6 宮</td><td>失勢／夜間吉星</td><td>愛得深、佔有、忠誠；容易以照顧、服務換取安全感。</td></tr>
+<tr><td>火星</td><td>處女座 8°30′</td><td>第 5 宮</td><td>土象執行</td><td>把熱情落到技術、細節、改進和作品上。</td></tr>
+<tr><td>木星</td><td>雙子座 11°14′</td><td>第 1 宮</td><td>逆行／失勢</td><td>知識量、資訊量、語言擴張，但容易思緒過載。</td></tr>
+<tr><td>土星</td><td>雙子座 0°41′</td><td>第 1 宮</td><td>逆行／夜間壓力星</td><td>自我要求重，怕不專業、怕說錯、怕被看輕。</td></tr>
+<tr><td>天王星</td><td>水瓶座 17°10′</td><td>第 10 宮</td><td>逆行／守護力強</td><td>事業走非典型、獨特、創新、與主流保持距離。</td></tr>
+<tr><td>海王星</td><td>水瓶座 3°51′</td><td>第 9 宮</td><td>逆行</td><td>高等知識、遠方、信念、神秘學帶理想化與迷霧。</td></tr>
+<tr><td>冥王星</td><td>射手座 10°36′</td><td>第 7 宮</td><td>深層轉化</td><td>親密關係牽動權力、信任、投射、毀滅與重生。</td></tr>
+</tbody></table></section>
+
+<div class="section-title"><h2>三、四軸與人生方向</h2><span class="badge">Angles</span></div>
+<section class="grid two"><div class="card"><table><thead><tr><th>角點</th><th>位置</th><th>解讀</th></tr></thead><tbody><tr><td>上升 Asc</td><td>金牛座 24°50′</td><td>外在氣質慢、穩、保守、重質感；命主星金星落第 6 宮。</td></tr>
+<tr><td>下降 Dsc</td><td>天蠍座 24°50′</td><td>關係吸引深刻、神秘、有強度的人；親密關係重忠誠與掌控。</td></tr>
+<tr><td>天頂 MC</td><td>水瓶座 6°18′</td><td>事業需要獨特定位、創新、非典型專業與社群性。</td></tr>
+<tr><td>天底 IC</td><td>獅子座 6°18′</td><td>內在小孩渴望被看見、被讚賞、被當成重要存在。</td></tr>
+</tbody></table></div><div class="card"><h3>四軸總結</h3><p>上升金牛令 Howard 外表穩定、慢熱、重質感；下降天蠍令關係需要深度與忠誠；IC 獅子說明私下需要被看見；MC 水瓶則把事業推向非典型、科技感、社群感、前衛或神秘學系統化方向。</p><div class="callout">一句話：外表穩，內在要被看見，關係要夠深，事業要夠獨特。</div></div></section>
+
+<div class="section-title" id="houses"><h2>四、十二宮位主題</h2><span class="badge">House Emphasis</span></div>
+<section class="card"><table><thead><tr><th>宮位</th><th>已確認資料</th><th>主題</th></tr></thead><tbody><tr><td>第 1 宮</td><td>木星雙子逆行、土星雙子逆行、精神點雙子、婚姻點雙子</td><td>自我形象、語言、腦內壓力、擴張與收縮並存。</td></tr>
+<tr><td>第 2 宮</td><td>死亡點巨蟹 2°08′</td><td>金錢安全、身體價值、資源焦慮。</td></tr>
+<tr><td>第 3 宮</td><td>北交點巨蟹 20°35′</td><td>日常溝通、學習、具體情感連結，是今生發展方向。</td></tr>
+<tr><td>第 4 宮</td><td>IC 獅子 6°18′</td><td>家庭、內在小孩、私下被重視與被看見的需求。</td></tr>
+<tr><td>第 5 宮</td><td>太陽天秤、火星處女</td><td>創造、戀愛、玩樂、舞台、自我表達；但表達帶著修正與技術感。</td></tr>
+<tr><td>第 6 宮</td><td>月亮天蠍、水星天蠍、金星天蠍、灶神天秤</td><td>全盤主機房：工作、日常、健康、服務、情緒和控制感。</td></tr>
+<tr><td>第 7 宮</td><td>冥王射手、凱龍射手、下降天蠍</td><td>伴侶、投射、信任、權力、創傷與關係重生。</td></tr>
+<tr><td>第 8 宮</td><td>物質點摩羯 11°18′</td><td>共享資源、他人金錢、槓桿、深層恐懼與安全底牌。</td></tr>
+<tr><td>第 9 宮</td><td>海王水瓶、莉莉絲摩羯</td><td>信念、高等知識、神秘學、遠方、理想化與逃避。</td></tr>
+<tr><td>第 10 宮</td><td>天王水瓶、MC 水瓶、婚神水瓶</td><td>事業、名聲、公共身份、非典型定位、社群影響力。</td></tr>
+<tr><td>第 11 宮</td><td>未見主要行星落入；按整宮制為雙魚宮，宮主木星落第 1 宮，現代主海王落第 9 宮</td><td>朋友、社群、團隊、願景與受眾。雖然沒有主要行星坐守，但宮主星把社群願景導向自我身份、知識、遠方與神秘學。</td></tr>
+<tr><td>第 12 宮</td><td>福點白羊 20°55′</td><td>潛意識、退隱、靈性保護、獨處中的行動力。</td></tr>
+</tbody></table></section>
+
+<div class="section-title" id="rulers"><h2>五、完整宮主星飛宮</h2><span class="badge">12 House Rulers</span></div>
+<section class="grid two">
+  <div class="card"><h3>宮主星飛宮點睇？</h3><p>宮主星飛宮是看「某宮議題流向哪裡」。例如 1 宮主金星飛 6 宮，代表自我價值流向日常、工作、健康和服務。今版補齊 12 宮，不再漏第 11 宮。</p><p class="note">註：文件未提供完整 Placidus 12 宮宮頭度數，所以第 2、3、5、6、8、9、11、12 宮用金牛上升整宮制參考；四軸宮位則用已確認資料。</p></div>
+  <div class="card"><table><thead><tr><th>飛宮</th><th>依據</th><th>解讀</th></tr></thead><tbody><tr><td>第 1 宮主飛第 6 宮</td><td>1 宮金牛；命主星金星落天蠍第 6 宮</td><td>自我、身體、形象與價值感被帶到工作、日常、健康、服務與細節控制。這是全盤最重要的飛宮之一。</td></tr>
+<tr><td>第 2 宮主飛第 6 宮</td><td>整宮參考：2 宮雙子；宮主水星落天蠍第 6 宮</td><td>金錢、收入、身體價值與技能、日常工作、服務流程綁定。賺錢要靠技術化、分析化、資料化。</td></tr>
+<tr><td>第 3 宮主飛第 6 宮</td><td>整宮參考：3 宮巨蟹；宮主月亮落天蠍第 6 宮</td><td>學習、溝通、短途移動、手足／同輩議題被導向工作和身體狀態；情緒會影響表達。</td></tr>
+<tr><td>第 4 宮主飛第 5 宮</td><td>IC 獅子；宮主太陽落天秤第 5 宮</td><td>家庭、根基、內在小孩被帶到創作、戀愛、舞台和被欣賞需求。私下很需要被重視。</td></tr>
+<tr><td>第 5 宮主飛第 6 宮</td><td>整宮參考：5 宮處女；宮主水星落天蠍第 6 宮</td><td>創造力、戀愛、玩樂被導向技能、工作、日常流程。容易把興趣做成任務，也適合做高完成度作品。</td></tr>
+<tr><td>第 6 宮主飛第 6 宮</td><td>整宮參考：6 宮天秤；宮主金星落天蠍第 6 宮</td><td>第 6 宮自我強化，工作、健康、日常、服務、照顧、壓力管理是命盤主軸。</td></tr>
+<tr><td>第 7 宮主飛第 5／7 宮</td><td>下降天蠍；傳統主火星落處女第 5 宮，現代主冥王落射手第 7 宮</td><td>伴侶和合作被帶到戀愛、創造、表演，也保留強烈權力與投射。關係容易又吸引又高壓。</td></tr>
+<tr><td>第 8 宮主飛第 1 宮</td><td>整宮參考：8 宮射手；宮主木星落雙子第 1 宮；冥王在第 7 宮</td><td>共享資源、他人金錢、深層恐懼與自我身份相連。對資源安全和信任非常敏感。</td></tr>
+<tr><td>第 9 宮主飛第 1 宮</td><td>整宮參考：9 宮摩羯；宮主土星落雙子第 1 宮</td><td>高等知識、遠方、信念、學術、神秘學直接塑造自我身份，也帶來壓力和責任感。</td></tr>
+<tr><td>第 10 宮主飛第 10／1 宮</td><td>MC 水瓶；現代主天王落水瓶第 10 宮，傳統主土星落雙子第 1 宮</td><td>事業走非典型定位，並與自我形象強烈綁定。若事業不清晰，自我壓力會上升。</td></tr>
+<tr><td>第 11 宮主飛第 1／9 宮</td><td>整宮參考：11 宮雙魚；傳統主木星落第 1 宮，現代主海王落第 9 宮</td><td>朋友、社群、受眾、願景被帶到自我品牌與知識／信念領域。適合以個人洞察吸引社群，但要防理想化朋友圈或願景過大。</td></tr>
+<tr><td>第 12 宮主飛第 5 宮</td><td>整宮參考：12 宮白羊；宮主火星落處女第 5 宮</td><td>潛意識壓力、隱藏敵意、孤獨感可透過創作、運動、戀愛、舞台表達釋放。</td></tr>
+</tbody></table></div>
+</section>
+
+<div class="section-title" id="aspects"><h2>六、主要相位</h2><span class="badge">Aspects</span></div>
+<section class="card"><table><thead><tr><th>相位</th><th>容許度</th><th>位置</th><th>解讀</th></tr></thead><tbody><tr><td>月亮合金星</td><td>約 4°23′</td><td>天蠍第 6 宮</td><td>情緒與愛黏合。深情、記憶力強，也容易把照顧變成佔有。</td></tr>
+<tr><td>月亮合水星</td><td>約 9°10′</td><td>天蠍第 6 宮</td><td>情緒直接進入思考。直覺強，但容易越想越深。</td></tr>
+<tr><td>水星合金星</td><td>約 4°47′</td><td>天蠍第 6 宮</td><td>語言帶魅力與穿透力，適合深度文字、心理、命理分析。</td></tr>
+<tr><td>水星刑海王星</td><td>約 1°28′</td><td>天蠍—水瓶</td><td>想像力與直覺強，但容易混淆猜測、恐懼和事實。</td></tr>
+<tr><td>金星刑海王星</td><td>約 3°19′</td><td>天蠍—水瓶</td><td>關係容易理想化、神秘化，容易被靈魂感吸引。</td></tr>
+<tr><td>月亮刑天王星</td><td>約 5°37′</td><td>天蠍—水瓶</td><td>情緒突變，親密與自由需求交替，關係中容易忽冷忽熱。</td></tr>
+<tr><td>太陽拱木星</td><td>約 3°36′</td><td>天秤—雙子</td><td>有表達、社交、學習與擴張天賦，能把觀點講得有吸引力。</td></tr>
+<tr><td>太陽六合冥王星</td><td>約 2°58′</td><td>天秤—射手</td><td>自我表達帶轉化力，創作和觀點可影響他人。</td></tr>
+<tr><td>火星刑木星</td><td>約 2°44′</td><td>處女—雙子</td><td>行動與資訊擴張互相推高，容易同時做太多。</td></tr>
+<tr><td>火星刑冥王星</td><td>約 2°06′</td><td>處女—射手</td><td>壓力下有強大破壞與改造力，需要健康出口。</td></tr>
+<tr><td>木星沖冥王星</td><td>約 0°38′</td><td>雙子—射手</td><td>信念、知識、權力與關係拉扯強，容易走極端。</td></tr>
+<tr><td>海王星合 MC</td><td>約 2°27′</td><td>水瓶天頂附近</td><td>事業形象帶靈感、神秘、影像、理想與迷霧，需要清晰定位。</td></tr>
+<tr><td>土星一宮同宮效應</td><td>同宮，不以精準合相處理</td><td>第 1 宮</td><td>外在成熟、防備、自我要求高，容易把人生當考試。</td></tr>
+</tbody></table></section>
+
+<div class="section-title"><h2>七、小行星與阿拉伯點</h2><span class="badge">Points</span></div>
+<section class="card"><table><thead><tr><th>點位</th><th>位置</th><th>解讀</th></tr></thead><tbody><tr><td>北交點</td><td>巨蟹座 20°35′，第 3 宮</td><td>今生方向是情感化溝通、日常連結、具體表達。</td></tr>
+<tr><td>南交點</td><td>摩羯座，第 9 宮</td><td>慣性是孤獨權威、高高在上、用理性壓情感。</td></tr>
+<tr><td>凱龍星</td><td>射手座 12°52′，第 7 宮</td><td>親密關係中的信任、自由與信念創傷。</td></tr>
+<tr><td>莉莉絲</td><td>摩羯座 23°45′，第 9 宮</td><td>對權威、規則、高等信念有壓抑又反抗的陰影。</td></tr>
+<tr><td>婚神星</td><td>水瓶座，第 10 宮</td><td>伴侶議題連到社會身份、事業定位、理想與朋友式關係。</td></tr>
+<tr><td>灶神星</td><td>天秤座，第 6 宮</td><td>工作中對公平、秩序、正義、服務有高度投入。</td></tr>
+<tr><td>福點</td><td>白羊座 20°55′，第 12 宮</td><td>獨處、潛意識、退隱和靈性行動中有保護。</td></tr>
+<tr><td>精神點</td><td>雙子座 28°45′，第 1 宮</td><td>精神動力來自語言、思考、學習與自我表達。</td></tr>
+<tr><td>物質點</td><td>摩羯座 11°18′，第 8 宮</td><td>物質資源與他人金錢、深層安全感相關。</td></tr>
+<tr><td>婚姻點</td><td>雙子座 12°30′，第 1 宮</td><td>關係牽動自我身份與溝通模式。</td></tr>
+<tr><td>死亡點</td><td>巨蟹座 2°08′，第 2 宮</td><td>金錢、安全感、身體價值與失去恐懼相連。</td></tr>
+</tbody></table></section>
+
+<div class="section-title" id="analysis"><h2>八、占星深度結論</h2><span class="badge">Long Synthesis</span></div>
+<section class="grid">
+
+  <article class="accordion open">
+    <button class="acc-btn"><span><span class="acc-title">1. 命盤核心不是「天秤」，而是「第 6 宮天蠍主機房」</span><span class="acc-sub">Deep Synthesis 1</span></span><span class="acc-icon">＋</span></button>
+    <div class="acc-content"><p>太陽天秤五宮確實給 Howard 一種想被喜歡、想有舞台、想保持體面的表層人格，但真正長期運作的核心，是月亮、水星、金星集中在天蠍第 6 宮。第 6 宮不是華麗的宮位，它代表日常、工作、健康、細節、服務和壓力管理。當天蠍的深度落在這裡，Howard 不是單純情緒深，而是會把情緒放進生活每一個細節裡：訊息回覆的語氣、工作流程的漏洞、身體是否舒服、對方是否有隱瞞，都會被放大成安全感問題。因此，這張盤最需要修煉的不是變得更聰明，而是建立一套讓身體和日常能穩定運作的系統。</p></div>
+  </article>
+
+
+  <article class="accordion open">
+    <button class="acc-btn"><span><span class="acc-title">2. 命主星金星飛第 6 宮，是全盤最關鍵的導流</span><span class="acc-sub">Deep Synthesis 2</span></span><span class="acc-icon">＋</span></button>
+    <div class="acc-content"><p>上升金牛的命主星是金星，而金星落在天蠍第 6 宮。這代表 Howard 的自我價值、外在狀態和安全感，會被導向第 6 宮議題：工作是否有秩序、生活是否受控、身體是否穩定、自己是否有用。這也是為什麼他容易透過照顧別人、解決問題、處理細節來證明價值。高階用法是成為能把混亂整理成系統的人；低階用法是過度服務、過度分析，最後覺得自己被消耗。</p></div>
+  </article>
+
+
+  <article class="accordion ">
+    <button class="acc-btn"><span><span class="acc-title">3. 第 11 宮雖無主要行星，但不是沒有社群運</span><span class="acc-sub">Deep Synthesis 3</span></span><span class="acc-icon">＋</span></button>
+    <div class="acc-content"><p>第 11 宮沒有主要行星落入，不等於沒有朋友、受眾或社群議題。以整宮制參考，第 11 宮雙魚，傳統主木星落第 1 宮，現代主海王落第 9 宮。這代表 Howard 的社群和受眾，會被他的個人身份、知識、信念、遠方視野、神秘學或理想吸引。問題是海王參與時，容易對朋友、社群或未來願景理想化；所以他需要清楚篩選圈子，不能只憑靈魂感加入群體。</p></div>
+  </article>
+
+
+  <article class="accordion ">
+    <button class="acc-btn"><span><span class="acc-title">4. 事業不能只靠感覺，必須把迷霧變成定位</span><span class="acc-sub">Deep Synthesis 4</span></span><span class="acc-icon">＋</span></button>
+    <div class="acc-content"><p>MC 水瓶、天王星第 10 宮和海王星合 MC，給 Howard 很強的非典型事業訊號。他適合做前衛、獨特、跨界、資料化、心理化、命理化、AI 化、策略化的工作，而不是永遠待在純重複執行的位置。但海王合 MC 也會帶來職業迷霧：想像很大，方向很多，身份邊界模糊。要破解這點，必須把靈感變成文件、作品集、服務流程和明確定位。</p></div>
+  </article>
+
+
+  <article class="accordion ">
+    <button class="acc-btn"><span><span class="acc-title">5. 關係是最大轉化場，也是最大投射場</span><span class="acc-sub">Deep Synthesis 5</span></span><span class="acc-icon">＋</span></button>
+    <div class="acc-content"><p>下降天蠍、冥王第 7 宮、凱龍第 7 宮，加上 7 宮主火星飛第 5 宮，說明 Howard 在關係裡不是要淺層陪伴，而是要深度、忠誠、真相和強烈感。戀愛會點燃他的創造力，也會觸發他的防衛和控制。當關係不確定時，他可能會用測試、冷處理、挑細節來確認對方是否可靠。成熟方向不是降低對深度的需求，而是把深度需求講清楚，並用界線代替測試。</p></div>
+  </article>
+
+
+  <article class="accordion ">
+    <button class="acc-btn"><span><span class="acc-title">6. 最終占星結論：把敏感升級成系統，把防禦升級成界線</span><span class="acc-sub">Deep Synthesis 6</span></span><span class="acc-icon">＋</span></button>
+    <div class="acc-content"><p>Howard 的盤不是要他變成一個沒有情緒、沒有疑心、沒有控制欲的人。相反，這張盤給他的禮物正是洞察力、危機感、細節感和轉化力。問題在於這些能力若沒有結構，就會變成內耗；若有結構，就會變成專業。最終方向是：用金牛上升建立穩定身體和節奏，用天秤太陽創造美感和舞台，用天蠍六宮建立深度工作系統，用水瓶天頂打造獨特公共身份。這樣他就不是被命盤推著走，而是把命盤變成一套可運作的 Soul OS。</p></div>
+  </article>
+
+</section>
+</main>
+<button class="float" id="topBtn">↑</button>
+</div>
+
+<script>
+const t2sMap = {"這":"这","個":"个","點":"点","覺":"觉","體":"体","關":"关","係":"系","統":"统","後":"后","資":"资","料":"料","數":"数","據":"据","庫":"库","宮":"宫","與":"与","萬":"万","專":"专","業":"业","現":"现","簡":"简","開":"开","門":"门","檔":"档","畫":"画","過":"过","運":"运","動":"动","靈":"灵","曆":"历","瑪":"玛","亞":"亚","紅":"红","龍":"龙","風":"风","險":"险","錯":"错","認":"认","為":"为","無":"无","壓":"压","緒":"绪","氣":"气","斷":"断","結":"结","構":"构","權":"权","錢":"钱","財":"财","務":"务","聲":"声","應":"应","該":"该","類":"类","選":"选","擇":"择","題":"题","問":"问","輸":"输","複":"复","製":"制","時":"时","間":"间","鄭":"郑","歲":"岁","陰":"阴","陽":"阳","貴":"贵","獨":"独","雙":"双","長":"长","學":"学","習":"习","療":"疗","癒":"愈","職":"职","場":"场","穩":"稳","愛":"爱","實":"实","驗":"验","淺":"浅","蠍":"蝎","處":"处","獅":"狮","獻":"献","責":"责","備":"备","識":"识","創":"创","見":"见","觸":"触","發":"发","衝":"冲","擊":"击","讀":"读","觀":"观","內":"内","層":"层","測":"测","試":"试","邏":"逻","輯":"辑","標":"标","籤":"签","語":"语","條":"条","輔":"辅","軸":"轴","態":"态","強":"强","異":"异","輕":"轻","藝":"艺","醫":"医","顧":"顾","師":"师","從":"从","來":"来","寫":"写","聽":"听","說":"说","裡":"里","線":"线","階":"阶","級":"级","遷":"迁","變":"变","總":"总","懷":"怀","價":"价","質":"质","極":"极","給":"给","帶":"带","還":"还","顯":"显","隱":"隐","讓":"让","樣":"样","張":"张","戰":"战","爭":"争"};
+function toSimplified(str){return str.split("").map(ch=>t2sMap[ch]||ch).join("")}
+let simplified=localStorage.getItem("soul_lang")==="simp";let originalText=new WeakMap();
+function convertPage(){const walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT,{acceptNode(node){if(!node.nodeValue.trim())return NodeFilter.FILTER_REJECT;if(node.parentElement&&["SCRIPT","STYLE"].includes(node.parentElement.tagName))return NodeFilter.FILTER_REJECT;return NodeFilter.FILTER_ACCEPT;}});const nodes=[];while(walker.nextNode())nodes.push(walker.currentNode);nodes.forEach(node=>{if(!originalText.has(node))originalText.set(node,node.nodeValue);node.nodeValue=simplified?toSimplified(originalText.get(node)):originalText.get(node);});document.getElementById("langBtn").textContent=simplified?"简":"繁";}
+document.querySelectorAll(".acc-btn").forEach(btn=>btn.onclick=()=>btn.closest(".accordion").classList.toggle("open"));
+document.getElementById("themeBtn").onclick=()=>{const isDark=document.documentElement.classList.toggle("dark");localStorage.setItem("soul_theme",isDark?"dark":"light");document.getElementById("themeBtn").textContent=isDark?(simplified?"天蝎黑":"天蠍黑"):(simplified?"辛金银":"辛金銀");};
+document.getElementById("langBtn").onclick=()=>{simplified=!simplified;localStorage.setItem("soul_lang",simplified?"simp":"trad");convertPage();};
+document.getElementById("topBtn").onclick=()=>scrollTo({top:0,behavior:"smooth"});
+document.getElementById("openDrawer").onclick=()=>document.getElementById("drawer").classList.add("open");
+document.getElementById("closeDrawer").onclick=()=>document.getElementById("drawer").classList.remove("open");
+document.getElementById("drawer").onclick=e=>{if(e.target.id==="drawer")document.getElementById("drawer").classList.remove("open");};
+if((localStorage.getItem("soul_theme")||"dark")==="dark")document.documentElement.classList.add("dark");else document.documentElement.classList.remove("dark");
+convertPage();
+</script>
+</body>
+</html>

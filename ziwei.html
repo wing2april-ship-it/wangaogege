@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="zh-Hant" class="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Soul OS｜紫微斗數 Zi Wei</title>
+<style>
+:root{--bg1:#edf1f4;--bg2:#cad7df;--ink:#12202e;--muted:#546473;--glass:rgba(255,255,255,.58);--glass2:rgba(255,255,255,.31);--line:rgba(255,255,255,.56);--accent:#8a7db8;--shadow:0 26px 90px rgba(26,43,58,.16)}
+html.dark{--bg1:#03050b;--bg2:#111b2b;--ink:#f7f9fc;--muted:#b4bfca;--glass:rgba(12,19,31,.66);--glass2:rgba(255,255,255,.075);--line:rgba(255,255,255,.14);--accent:#c7b8ff;--shadow:0 28px 90px rgba(0,0,0,.46)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC","Noto Sans SC","PingFang TC","Microsoft JhengHei",Arial,sans-serif;background:radial-gradient(circle at 12% 6%,rgba(255,255,255,.75),transparent 25%),radial-gradient(circle at 82% 10%,rgba(160,140,205,.30),transparent 28%),radial-gradient(circle at 52% 95%,rgba(130,180,210,.18),transparent 25%),linear-gradient(135deg,var(--bg1),var(--bg2));min-height:100vh;transition:.35s}html.dark body{background:radial-gradient(circle at 12% 6%,rgba(90,90,160,.20),transparent 25%),radial-gradient(circle at 82% 10%,rgba(170,90,190,.16),transparent 28%),radial-gradient(circle at 52% 95%,rgba(88,130,190,.13),transparent 25%),linear-gradient(135deg,var(--bg1),var(--bg2))}body:before{content:"";position:fixed;inset:10px;border-radius:34px;pointer-events:none;box-shadow:inset 0 0 34px rgba(235,244,248,.36);animation:pulse 5s infinite;z-index:0}@keyframes pulse{50%{box-shadow:inset 0 0 78px rgba(235,244,248,.62)}}a{color:inherit;text-decoration:none}.page{position:relative;z-index:1}.topbar{position:sticky;top:14px;z-index:50;width:min(1320px,calc(100% - 28px));margin:14px auto 0;border:1px solid var(--line);background:var(--glass);backdrop-filter:blur(24px);border-radius:999px;box-shadow:var(--shadow)}.topinner{display:flex;align-items:center;gap:12px;padding:12px 14px}.logo{font-weight:950;letter-spacing:.22em;white-space:nowrap;padding:10px 14px}.nav{display:flex;gap:4px;align-items:center;justify-content:center;flex:1}.nav a{font-size:12px;padding:9px 10px;border-radius:999px;color:var(--muted)}.nav a:hover,.nav a.active{background:var(--glass2);color:var(--ink)}.btn,.pill{border:1px solid var(--line);background:var(--glass2);color:var(--ink);border-radius:999px;padding:10px 14px;font-weight:850;cursor:pointer}.mobile{display:none}.drawer{display:none;position:fixed;inset:0;background:rgba(0,0,0,.50);z-index:80}.drawer.open{display:block}.drawer-panel{height:100%;width:min(86vw,390px);overflow:auto;background:rgba(7,12,22,.92);backdrop-filter:blur(24px);color:white;padding:22px}.drawer-panel a{display:block;border:1px solid rgba(255,255,255,.12);border-radius:18px;margin:8px 0;padding:14px 16px}.container{width:min(1280px,calc(100% - 32px));margin:0 auto;padding:56px 0 96px}.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:22px;margin-bottom:22px}.glass,.card{border:1px solid var(--line);background:var(--glass);backdrop-filter:blur(24px);box-shadow:var(--shadow);border-radius:34px;padding:30px}.kicker{font-size:12px;letter-spacing:.42em;text-transform:uppercase;color:var(--accent);font-weight:950}h1{font-size:clamp(46px,7vw,94px);line-height:.9;margin:18px 0;font-weight:950;letter-spacing:-.06em}h2{font-size:clamp(28px,4vw,50px);line-height:1.05;margin:0 0 18px;font-weight:950;letter-spacing:-.04em}h3{font-size:22px;margin:0 0 12px}p{color:var(--muted);line-height:1.9}.lead{font-size:18px;color:var(--muted)}.chips,.mini-nav{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}.chip,.mini-nav a{border:1px solid var(--line);background:var(--glass2);border-radius:999px;padding:9px 13px;font-weight:850;font-size:13px}.section-title{display:flex;align-items:end;justify-content:space-between;gap:16px;margin:38px 0 16px}.badge{font-size:12px;border:1px solid var(--line);border-radius:999px;padding:7px 10px;color:var(--accent);font-weight:900;white-space:nowrap}.grid{display:grid;gap:18px}.two{grid-template-columns:1fr 1fr}.three{grid-template-columns:repeat(3,1fr)}.bento{display:grid;grid-template-columns:repeat(12,1fr);gap:18px}.span4{grid-column:span 4}.span6{grid-column:span 6}.span8{grid-column:span 8}.span12{grid-column:span 12}.callout{border-left:4px solid var(--accent);padding:16px 18px;background:var(--glass2);border-radius:20px;color:var(--muted);line-height:1.85}table{width:100%;border-collapse:separate;border-spacing:0;overflow:hidden;border-radius:24px;border:1px solid var(--line);background:var(--glass2)}th,td{padding:14px 15px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line);line-height:1.65}th{font-size:12px;letter-spacing:.15em;text-transform:uppercase;color:var(--accent)}tr:last-child td{border-bottom:0}td{color:var(--muted)}td:first-child{color:var(--ink);font-weight:850}.accordion{overflow:hidden;border:1px solid var(--line);background:var(--glass);backdrop-filter:blur(20px);border-radius:28px}.acc-btn{width:100%;border:0;background:transparent;color:var(--ink);padding:20px 22px;text-align:left;display:flex;justify-content:space-between;gap:14px;cursor:pointer}.acc-title{font-size:20px;font-weight:950}.acc-sub{font-size:13px;color:var(--muted);margin-top:4px}.acc-icon{width:34px;height:34px;display:grid;place-items:center;border:1px solid var(--line);border-radius:50%;flex:none;transition:.3s}.accordion.open .acc-icon{transform:rotate(45deg)}.acc-content{display:none;padding:0 22px 22px}.accordion.open .acc-content{display:block}.note{font-size:13px;color:var(--muted)}.float{position:fixed;right:18px;bottom:18px;z-index:70;width:54px;height:54px;border-radius:50%;border:1px solid var(--line);background:var(--glass);backdrop-filter:blur(20px);color:var(--ink);font-size:22px;box-shadow:var(--shadow);cursor:pointer}@media(max-width:1180px){.nav{display:none}.mobile{display:inline-flex}.hero,.two,.three{grid-template-columns:1fr}.bento{grid-template-columns:1fr}.span4,.span6,.span8,.span12{grid-column:span 1}.topbar{border-radius:28px}}@media(max-width:720px){body:before{inset:4px;border-radius:24px}.container{width:min(100% - 22px,680px);padding-top:26px}.glass,.card{padding:22px;border-radius:28px}.topinner{justify-content:space-between}.logo{letter-spacing:.14em}h1{font-size:46px}.lead{font-size:15px}th,td{display:block;width:100%}th{display:none}td{border-bottom:0;padding:8px 14px}tr{display:block;border-bottom:1px solid var(--line);padding:8px 0}tr:last-child{border-bottom:0}}
+</style>
+</head>
+<body>
+<div class="page">
+<header class="topbar"><div class="topinner"><button class="btn mobile" id="openDrawer">☰</button><a class="logo" href="home.html">SOUL OS</a><nav class="nav"><a href="home.html">整合大廳</a><a href="astrology.html">占星矩陣</a><a class="active" href="ziwei.html">紫微斗數</a><a href="numerology.html">生命靈數</a><a href="humandesign.html">人類圖</a><a href="maya.html">瑪雅曆</a><a href="mansions.html">二十八星宿</a><a href="qizheng-bazi.html">七政八字</a><a href="crossover.html">交叉比對</a><a href="undertow.html">暗流湧動</a><a href="peak.html">慾望巔峰</a><a href="strategy.html">2026</a><a href="defense.html">防禦</a><a href="refinement.html">煉金</a><a href="nucleus.html">Nucleus</a></nav><button class="btn" id="langBtn">繁</button><button class="btn" id="themeBtn">天蠍黑</button></div></header>
+<div class="drawer" id="drawer"><div class="drawer-panel"><button class="btn" id="closeDrawer">× 關閉</button><a href="home.html">整合大廳</a><a href="astrology.html">占星矩陣</a><a href="ziwei.html">紫微斗數</a><a href="numerology.html">生命靈數</a><a href="humandesign.html">人類圖</a><a href="maya.html">瑪雅曆</a><a href="mansions.html">二十八星宿</a><a href="qizheng-bazi.html">七政八字</a><a href="crossover.html">交叉比對</a><a href="undertow.html">暗流湧動</a><a href="peak.html">慾望巔峰</a><a href="strategy.html">2026</a><a href="defense.html">防禦</a><a href="refinement.html">煉金</a><a href="nucleus.html">全數據倉庫</a></div></div>
+
+<main class="container">
+<section class="hero">
+  <div class="glass">
+    <div class="kicker">Zi Wei Dou Shu / Revamped</div>
+    <h1>紫微斗數</h1>
+    <p class="lead">照 `astrology.html` 嘅詳細程度重做：先講紫微點睇，再列命宮、身宮、十二宮框架、三方四正、四化飛星、大限流年，最後用長篇結論整合。無 Prompt Generator。</p>
+    <div class="chips"><span class="chip">命宮子宮空宮</span><span class="chip">借遷移太陰天同</span><span class="chip">身宮財帛</span><span class="chip">疾厄武曲貪狼</span><span class="chip">庚干四化</span><span class="chip">戊子大運</span></div>
+  </div>
+  <div class="glass">
+    <h3>這個 Topic 點睇</h3>
+    <p>紫微斗數不能只看命宮主星。第一要看命宮與身宮，第二看三方四正，第三看四化飛星，最後看大限流年如何啟動。如果資料不足，就要標明待原盤核對，不可以硬作十二宮細節。</p>
+    <div class="mini-nav"><a href="#core">核心</a><a href="#palaces">十二宮</a><a href="#san">三方四正</a><a href="#hua">四化</a><a href="#daxian">大限</a><a href="#analysis">結論</a></div>
+  </div>
+</section>
+
+<section class="bento">
+  <div class="card span4"><div class="kicker">Life Gate</div><h3>命宮空宮</h3><p>命宮在子且空宮，不是沒有命，而是要借對宮遷移太陰天同。人生靠外界、人際、移動與環境鏡像被啟動。</p></div>
+  <div class="card span4"><div class="kicker">Body Palace</div><h3>身宮財帛</h3><p>身宮落財帛，代表人生不是只做精神分析，而是要把洞察、才華、技術轉成可見資源。</p></div>
+  <div class="card span4"><div class="kicker">Health Gate</div><h3>疾厄武貪</h3><p>疾厄宮武曲、貪狼，壓力、身體、慾望與財富企圖心綁在一起；身體管理就是命運策略。</p></div>
+</section>
+
+<div class="section-title" id="core"><h2>一、紫微核心盤面</h2><span class="badge">Core Data</span></div>
+<section class="grid two">
+  <div class="card"><h3>先看什麼？</h3><p>紫微的核心不是一句「命宮空宮」就完結，而是要看命宮從哪裡借星，身宮落在哪裡，以及四化如何把星曜啟動。Howard 的命宮要借遷移宮太陰天同，身宮落財帛，疾厄見武貪，三者構成很清晰的劇本：命靠外界啟動，身靠資源落地，壓力靠身體顯化。</p><div class="callout">資料限制：目前掌握的是核心截圖整理，不是完整紫微全盤。未提供完整十二宮主星、副星、宮干、自化飛線，所以未知宮位會標明待核對。</div></div>
+  <div class="card"><table><thead><tr><th>項目</th><th>資料</th><th>解讀</th></tr></thead><tbody><tr><td>出生資料</td><td>2000 年 9 月 30 日 20:22，北京時間，河南鄭州；真太陽時約 20:06。</td><td>紫微排盤需以農曆、時辰、命宮身宮起盤。</td></tr>
+<tr><td>農曆資料</td><td>庚辰年九月初三，戌時。</td><td>庚年四化是飛星核心。</td></tr>
+<tr><td>命宮</td><td>子宮，空宮。</td><td>命宮無主星，需借對宮遷移宮太陰、天同來讀。</td></tr>
+<tr><td>身宮</td><td>申宮，落財帛宮。</td><td>人生重心落在價值變現、資源管理、才華轉化成可見成果。</td></tr>
+<tr><td>遷移宮</td><td>太陰、天同。</td><td>外界、異地、移動、人際鏡像能啟動命格。</td></tr>
+<tr><td>疾厄宮</td><td>未宮，武曲、貪狼。</td><td>身體、慾望、財富企圖心、壓力管理互相牽動。</td></tr>
+<tr><td>補充訊號</td><td>文件曾提及命宮有左輔貴人訊號。</td><td>完整星曜仍需原始紫微盤核對。</td></tr>
+</tbody></table></div>
+</section>
+
+<div class="section-title" id="palaces"><h2>二、十二宮框架</h2><span class="badge">12 Palaces</span></div>
+<section class="card"><table><thead><tr><th>宮位</th><th>已確認資料</th><th>解讀</th></tr></thead><tbody><tr><td>命宮</td><td>子宮空宮，借遷移宮太陰、天同</td><td>自我不是一開始就固定，而是靠外界、人際、移動和環境鏡像被點亮。</td></tr>
+<tr><td>兄弟宮</td><td>待完整原盤核對</td><td>需確認主星、輔星與四化後，才可判斷手足／同輩／朋友式支援。</td></tr>
+<tr><td>夫妻宮</td><td>待完整原盤核對</td><td>目前可由命宮借星、七宮冥王、凱龍等交叉參考，但紫微夫妻宮需原盤。</td></tr>
+<tr><td>子女宮</td><td>待完整原盤核對</td><td>可延伸為創作、晚輩、作品延續，但需主星資料確認。</td></tr>
+<tr><td>財帛宮</td><td>身宮在申，落財帛</td><td>人生實際落點是資源、收入、才華變現與價值交換。</td></tr>
+<tr><td>疾厄宮</td><td>未宮，武曲、貪狼</td><td>身體承受慾望、壓力、企圖心；要用紀律管理本能和消耗。</td></tr>
+<tr><td>遷移宮</td><td>太陰、天同</td><td>外出、異地、人際場景、跨圈層能啟動柔性資源與貴人。</td></tr>
+<tr><td>交友／奴僕宮</td><td>待完整原盤核對</td><td>需看主星與四化，暫不可硬判團隊與下屬模式。</td></tr>
+<tr><td>官祿宮</td><td>待完整原盤核對</td><td>可與身宮財帛、遷移太陰天同一起看：職業需透過外界場景和資源交換成形。</td></tr>
+<tr><td>田宅宮</td><td>待完整原盤核對</td><td>需原盤確認家宅、內在安全感和不動產運。</td></tr>
+<tr><td>福德宮</td><td>待完整原盤核對</td><td>精神享受、內在快樂、潛意識消耗需原盤星曜確認。</td></tr>
+<tr><td>父母宮</td><td>待完整原盤核對</td><td>權威、長輩、原生家庭壓力與支援需完整資料。</td></tr>
+</tbody></table></section>
+
+<div class="section-title" id="san"><h2>三、命宮三方四正</h2><span class="badge">Life Triangle</span></div>
+<section class="grid two">
+  <div class="card"><h3>三方四正點睇？</h3><p>命宮、財帛、官祿、遷移是一個人如何活出命格的核心四角。命宮空宮時，不能只看命宮本身，而要更重視對宮遷移與身宮所在。</p><p class="note">Howard 的官祿宮主星未有完整資料，所以不會硬判官祿細節；但命宮借遷移與身宮財帛已足夠看出大方向。</p></div>
+  <div class="card"><table><thead><tr><th>結構</th><th>資料</th><th>解讀</th></tr></thead><tbody><tr><td>命宮三方四正讀法</td><td>命宮、財帛、官祿、遷移四個宮位互相成局。</td><td>命宮空宮時，三方四正更重要，因為命格不是單點成立，而是靠場域互相啟動。</td></tr>
+<tr><td>命宮 ↔ 遷移</td><td>命宮在子空宮，借對宮遷移太陰、天同。</td><td>Howard 的自我感不是關在房內想出來，而是被外部環境、人際鏡像、移動與異地打開。</td></tr>
+<tr><td>命宮 ↔ 財帛</td><td>身宮在財帛。</td><td>不只是精神洞察，而是要把洞察變成資源、作品、專業價值。</td></tr>
+<tr><td>命宮 ↔ 官祿</td><td>官祿宮主星待核對。</td><td>現有資料不足以硬判官祿主星，但可暫以『外界啟動＋財帛身宮』推論：職業要靠場景、受眾、資源化。</td></tr>
+<tr><td>命宮 ↔ 疾厄</td><td>疾厄武曲、貪狼。</td><td>身體壓力、慾望、企圖心與財務焦慮會反過來影響自我狀態。</td></tr>
+</tbody></table></div>
+</section>
+
+<div class="section-title" id="hua"><h2>四、生年四化與飛星</h2><span class="badge">Four Transformations</span></div>
+<section class="grid two">
+  <div class="card"><h3>飛星點睇？</h3><p>紫微飛星不是只背「祿權科忌」，而是看哪顆星被化、落在哪個宮、與命宮身宮如何連動。Howard 是庚辰年，庚干四化為太陽化祿、武曲化權、太陰化科、天同化忌。</p><div class="callout">最重要連動：命宮空借遷移太陰天同，所以太陰化科與天同化忌會直接影響自我呈現；疾厄武曲受武曲化權加強，身體壓力與控制力被放大。</div></div>
+  <div class="card"><table><thead><tr><th>四化</th><th>資料</th><th>解讀</th></tr></thead><tbody><tr><td>生年天干</td><td>庚辰年，生年干為庚。</td><td>庚干四化是本命自帶的祿權科忌。</td></tr>
+<tr><td>太陽化祿</td><td>庚干太陽化祿。</td><td>舞台感、可見度、被欣賞、創作表達有祿氣；但需看太陽落宮才可精準判斷。</td></tr>
+<tr><td>武曲化權</td><td>庚干武曲化權；疾厄宮見武曲。</td><td>武曲權落疾厄訊號很重：身體、紀律、財務企圖心、控制力、抗壓力被強化。</td></tr>
+<tr><td>太陰化科</td><td>庚干太陰化科；遷移宮太陰。</td><td>外界、異地、人際場景容易帶來名聲、修飾、柔性貴人和理性化保護。</td></tr>
+<tr><td>天同化忌</td><td>庚干天同化忌；遷移宮天同。</td><td>外界舒適感、依賴感、人際情緒容易變成糾結；命宮借遷移，故天同忌會影響自我感。</td></tr>
+<tr><td>命宮借星連動</td><td>命宮空宮借太陰、天同。</td><td>太陰科與天同忌一同進入命格鏡像：既有柔性貴人／名聲修飾，也有舒適感與情緒依賴的忌。</td></tr>
+<tr><td>已知飛化提示</td><td>資料曾標註本宮自化忌、對宮化入科。</td><td>代表命宮內在有自我拉扯；對宮遷移帶化科式修飾、學習、名聲或外部貴人。</td></tr>
+<tr><td>待核對</td><td>完整飛線需十二宮宮干、星曜全表、自化與化入化出。</td><td>目前不能偽造完整飛線。</td></tr>
+</tbody></table></div>
+</section>
+
+<div class="section-title" id="daxian"><h2>五、戊子大運與 2026 流年</h2><span class="badge">Timing</span></div>
+<section class="grid two">
+  <div class="card"><table><thead><tr><th>大運項目</th><th>資料</th><th>解讀</th></tr></thead><tbody><tr><td>現行大運</td><td>戊子大運，24 至 33 歲。</td><td>與八字資料一致，主題是內在系統重建、學習、輸出與生活節奏重組。</td></tr>
+<tr><td>戊干四化</td><td>貪狼化祿、太陰化權、右弼化科、天機化忌。</td><td>文件以『貪陰右機』標註。</td></tr>
+<tr><td>貪狼化祿</td><td>慾望、機會、人際吸引、變現動機被打開。</td><td>高階是市場嗅覺與魅力；低階是過度追求刺激。</td></tr>
+<tr><td>太陰化權</td><td>太陰被權化。</td><td>資源掌控、情緒權力、女性／柔性資源、異地外部場景變得更有力量。</td></tr>
+<tr><td>右弼化科</td><td>貴人、輔助、合作被科化。</td><td>容易遇到可修飾名聲、提供支援、幫忙搭橋的人，但需識別真貴人。</td></tr>
+<tr><td>天機化忌</td><td>策略、變動、思考、計劃容易成為忌。</td><td>過度思考、頻繁改方向、想太多而不落地，是此運最大陷阱。</td></tr>
+</tbody></table></div>
+  <div class="card"><table><thead><tr><th>2026 項目</th><th>資料</th><th>解讀</th></tr></thead><tbody><tr><td>2026 丙午</td><td>若取丙干流年四化，通常為天同化祿、天機化權、文昌化科、廉貞化忌。</td><td>具體落宮必須以完整流年紫微盤核對。</td></tr>
+<tr><td>天同化祿</td><td>舒適、人際緩和、享受感被放大。</td><td>但本命天同化忌也在命宮借對宮結構中，形成舒適與不安並存。</td></tr>
+<tr><td>天機化權</td><td>策略、變動、計劃能力變強。</td><td>可用來定方向，但若配合大運天機忌，易一邊想掌控一邊焦慮。</td></tr>
+<tr><td>文昌化科</td><td>學習、文字、證書、內容輸出、文書名聲。</td><td>適合整理報告、做系統化內容、建立專業形象。</td></tr>
+<tr><td>廉貞化忌</td><td>規則、界線、慾望、權力糾葛。</td><td>需防感情、職場規則、人際權力拉扯。</td></tr>
+</tbody></table></div>
+</section>
+
+<div class="section-title"><h2>六、跨系統交叉驗證</h2><span class="badge">Crossover</span></div>
+<section class="card"><table><thead><tr><th>系統</th><th>對應</th><th>結論</th></tr></thead><tbody><tr><td>與西方占星</td><td>紫微命宮空借遷移，對應占星上外部場域啟動自我；身宮財帛對應占星第 6 宮主機房與第 10 宮事業定位。</td><td>兩邊都不支持『躲起來等命運』，而是要透過外界場景和專業輸出啟動。</td></tr>
+<tr><td>與八字</td><td>疾厄武貪、武曲化權，對應辛金身旺與卯酉沖的高壓控制。</td><td>身體和壓力管理不是附加項，而是命運策略的一部分。</td></tr>
+<tr><td>與人類圖</td><td>投射者等待邀請，對應命宮借遷移與外界啟動。</td><td>不是主動硬推，而是讓場域看見你的價值。</td></tr>
+<tr><td>與靈數</td><td>14/5 想自由，13/4 要系統；紫微身宮財帛要求自由要變成可變現結構。</td><td>把探索變成產品、方法、報告、服務。</td></tr>
+</tbody></table></section>
+
+<div class="section-title" id="analysis"><h2>七、紫微深度結論</h2><span class="badge">Long Synthesis</span></div>
+<section class="grid">
+
+  <article class="accordion open">
+    <button class="acc-btn"><span><span class="acc-title">1. 命宮空宮不是空白，而是「需要被場域點亮」</span><span class="acc-sub">Zi Wei Synthesis 1</span></span><span class="acc-icon">＋</span></button>
+    <div class="acc-content"><p>Howard 的紫微命宮在子，且為空宮，這件事不能簡化成『命宮沒主星所以弱』。空宮的重點是：自我不是靠封閉式思考長出來，而是透過對宮遷移宮來借星。對宮有太陰與天同，代表他需要透過外界場景、移動、異地、人際鏡像和柔性貴人來看見自己。換句話說，他的命不是靜態的，是互動型的。當他留在同一個狹窄環境太久，命格會變得像未啟動的系統；當他進入新場域、接觸新圈層、被不同的人看見，反而會打開另一種能力。</p></div>
+  </article>
+
+
+  <article class="accordion open">
+    <button class="acc-btn"><span><span class="acc-title">2. 太陰化科與天同化忌同時借入命宮，形成「溫柔包裝下的不安」</span><span class="acc-sub">Zi Wei Synthesis 2</span></span><span class="acc-icon">＋</span></button>
+    <div class="acc-content"><p>庚年四化裡，太陰化科、天同化忌，而 Howard 命宮正好借遷移宮的太陰與天同。這代表他的自我呈現會帶有太陰化科的修飾、柔和、理性、名聲感，也會帶有天同化忌的糾結、舒適依賴、情緒不安。外人可能覺得他好相處、溫和、甚至有一種柔性貴人運；但內在其實很容易因為環境不穩、人際不清、情緒舒適被破壞而產生焦慮。這個結構與占星月水金天蠍六宮很一致：越是小小的不安，越容易牽動整個內在系統。</p></div>
+  </article>
+
+
+  <article class="accordion ">
+    <button class="acc-btn"><span><span class="acc-title">3. 身宮財帛是紫微盤的現實落點：才華必須變成資源</span><span class="acc-sub">Zi Wei Synthesis 3</span></span><span class="acc-icon">＋</span></button>
+    <div class="acc-content"><p>身宮落財帛，是全盤最實際、也最重要的指標之一。這不是說他只愛錢，而是人生會不斷把問題推回『我的能力能不能變現？我的價值能不能被看見？我的資源能不能被掌控？』。Howard 不適合只停留在抽象分析或精神世界，他需要把洞察變成可被使用的東西：報告、工具、方法、服務、內容、決策系統。當他的才華沒有被資源化，他會感到人生空轉；當他的洞察能夠換成收入、影響力或具體成果，命格才會真正安定。</p></div>
+  </article>
+
+
+  <article class="accordion ">
+    <button class="acc-btn"><span><span class="acc-title">4. 疾厄武曲貪狼提醒：慾望、身體、錢和壓力是一套系統</span><span class="acc-sub">Zi Wei Synthesis 4</span></span><span class="acc-icon">＋</span></button>
+    <div class="acc-content"><p>疾厄宮見武曲、貪狼，再加上庚干武曲化權，說明 Howard 的身體不是單純健康問題，而是和慾望、控制、金錢企圖心、壓力承受力綁在一起。武曲讓他有硬撐、紀律、財務敏感和控制能力；貪狼讓他有慾望、刺激、魅力與不安分。當這兩顆星落在疾厄維度時，他不能只靠意志力生活。若長期壓抑慾望或過度消耗，身體會變成警報器；若能用運動、飲食、作息、研究和變現計劃去管理，反而可以把這組星變成強大的執行力。</p></div>
+  </article>
+
+
+  <article class="accordion ">
+    <button class="acc-btn"><span><span class="acc-title">5. 戊子大運的核心不是躺平，而是「慾望變現＋策略焦慮」</span><span class="acc-sub">Zi Wei Synthesis 5</span></span><span class="acc-icon">＋</span></button>
+    <div class="acc-content"><p>戊子大運四化為貪狼化祿、太陰化權、右弼化科、天機化忌。這組四化很有意思：貪狼祿帶來機會、慾望、人際吸引和變現衝動；太陰權讓資源、情緒和外部支持變得更有力量；右弼科帶來貴人和修飾；但天機忌令他容易想太多、改太多、計太多。這個大運不是沒有機會，而是機會會伴隨策略焦慮。真正要做的不是追每一個機會，而是建立清晰框架，決定哪些慾望值得變現，哪些只是分散注意力。</p></div>
+  </article>
+
+
+  <article class="accordion ">
+    <button class="acc-btn"><span><span class="acc-title">6. 2026 丙午要防「舒服感」和「控制感」同時失衡</span><span class="acc-sub">Zi Wei Synthesis 6</span></span><span class="acc-icon">＋</span></button>
+    <div class="acc-content"><p>2026 若以丙干流年四化作參考，天同化祿、天機化權、文昌化科、廉貞化忌。天同祿會帶來想舒服、想被照顧、想關係緩和的一面；天機權會讓他想掌控策略和方向；文昌科利文字、學習、整理、名聲；廉貞忌則提示規則、感情、權力、界線容易出問題。因為本命已有天同忌，大運又有天機忌，2026 不能只憑感覺做決定。最適合的做法，是把想法寫下來、把合作條件講清楚、把情緒和事實分開。</p></div>
+  </article>
+
+
+  <article class="accordion ">
+    <button class="acc-btn"><span><span class="acc-title">7. 最終紫微結論：命靠外界啟動，身靠資源落地，運靠系統承接</span><span class="acc-sub">Zi Wei Synthesis 7</span></span><span class="acc-icon">＋</span></button>
+    <div class="acc-content"><p>Howard 的紫微盤核心不是單一『好命』或『辛苦命』，而是三句話：命靠外界啟動，身靠資源落地，運靠系統承接。命宮空借遷移，代表他要在外界被看見；身宮財帛，代表他要把才華變成資源；疾厄武貪，代表他要管理身體和慾望；戊子大運貪陰右機，代表機會和焦慮會一起來。真正高階的走法，是不要把自己困在腦內，也不要被每個慾望拖走，而是用一套清晰方法，把外界邀請、專業能力、財務資源和身體節奏整合成自己的 Soul OS。</p></div>
+  </article>
+
+</section>
+</main>
+<button class="float" id="topBtn">↑</button>
+</div>
+
+<script>
+const t2sMap = {"這":"这","個":"个","點":"点","覺":"觉","體":"体","關":"关","係":"系","統":"统","後":"后","資":"资","料":"料","數":"数","據":"据","庫":"库","宮":"宫","與":"与","萬":"万","專":"专","業":"业","現":"现","簡":"简","開":"开","門":"门","檔":"档","畫":"画","過":"过","運":"运","動":"动","靈":"灵","曆":"历","瑪":"玛","亞":"亚","紅":"红","龍":"龙","風":"风","險":"险","錯":"错","認":"认","為":"为","無":"无","壓":"压","緒":"绪","氣":"气","斷":"断","結":"结","構":"构","權":"权","錢":"钱","財":"财","務":"务","聲":"声","應":"应","該":"该","類":"类","選":"选","擇":"择","題":"题","問":"问","輸":"输","複":"复","製":"制","時":"时","間":"间","鄭":"郑","歲":"岁","陰":"阴","陽":"阳","貴":"贵","獨":"独","雙":"双","長":"长","學":"学","習":"习","療":"疗","癒":"愈","職":"职","場":"场","穩":"稳","愛":"爱","實":"实","驗":"验","淺":"浅","蠍":"蝎","處":"处","獅":"狮","獻":"献","責":"责","備":"备","識":"识","創":"创","見":"见","觸":"触","發":"发","衝":"冲","擊":"击","讀":"读","觀":"观","內":"内","層":"层","測":"测","試":"试","邏":"逻","輯":"辑","標":"标","籤":"签","語":"语","條":"条","輔":"辅","軸":"轴","態":"态","強":"强","異":"异","輕":"轻","藝":"艺","醫":"医","顧":"顾","師":"师","從":"从","來":"来","寫":"写","聽":"听","說":"说","裡":"里","線":"线","階":"阶","級":"级","遷":"迁","變":"变","總":"总","懷":"怀","價":"价","質":"质","極":"极","給":"给","帶":"带","還":"还","顯":"显","隱":"隐","讓":"让","樣":"样","張":"张","戰":"战","爭":"争","飛":"飞","祿":"禄","忌":"忌","權":"权","科":"科","盤":"盘","輔":"辅"};
+function toSimplified(str){return str.split("").map(ch=>t2sMap[ch]||ch).join("")}
+let simplified=localStorage.getItem("soul_lang")==="simp";let originalText=new WeakMap();
+function convertPage(){const walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT,{acceptNode(node){if(!node.nodeValue.trim())return NodeFilter.FILTER_REJECT;if(node.parentElement&&["SCRIPT","STYLE"].includes(node.parentElement.tagName))return NodeFilter.FILTER_REJECT;return NodeFilter.FILTER_ACCEPT;}});const nodes=[];while(walker.nextNode())nodes.push(walker.currentNode);nodes.forEach(node=>{if(!originalText.has(node))originalText.set(node,node.nodeValue);node.nodeValue=simplified?toSimplified(originalText.get(node)):originalText.get(node);});document.getElementById("langBtn").textContent=simplified?"简":"繁";}
+document.querySelectorAll(".acc-btn").forEach(btn=>btn.onclick=()=>btn.closest(".accordion").classList.toggle("open"));
+document.getElementById("themeBtn").onclick=()=>{const isDark=document.documentElement.classList.toggle("dark");localStorage.setItem("soul_theme",isDark?"dark":"light");document.getElementById("themeBtn").textContent=isDark?(simplified?"天蝎黑":"天蠍黑"):(simplified?"辛金银":"辛金銀");};
+document.getElementById("langBtn").onclick=()=>{simplified=!simplified;localStorage.setItem("soul_lang",simplified?"simp":"trad");convertPage();};
+document.getElementById("topBtn").onclick=()=>scrollTo({top:0,behavior:"smooth"});
+document.getElementById("openDrawer").onclick=()=>document.getElementById("drawer").classList.add("open");
+document.getElementById("closeDrawer").onclick=()=>document.getElementById("drawer").classList.remove("open");
+document.getElementById("drawer").onclick=e=>{if(e.target.id==="drawer")document.getElementById("drawer").classList.remove("open");};
+if((localStorage.getItem("soul_theme")||"dark")==="dark")document.documentElement.classList.add("dark");else document.documentElement.classList.remove("dark");
+convertPage();
+</script>
+</body>
+</html>
