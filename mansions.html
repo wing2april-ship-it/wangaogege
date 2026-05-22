@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="zh-Hans" class="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Soul OS｜二十八星宿 Lunar Mansions</title>
+<style>
+:root{--bg1:#edf1f4;--bg2:#cad7df;--ink:#12202e;--muted:#546473;--glass:rgba(255,255,255,.58);--glass2:rgba(255,255,255,.31);--line:rgba(255,255,255,.56);--accent:#9b6ea8;--shadow:0 26px 90px rgba(26,43,58,.16)}
+html.dark{--bg1:#03050b;--bg2:#111b2b;--ink:#f7f9fc;--muted:#b4bfca;--glass:rgba(12,19,31,.66);--glass2:rgba(255,255,255,.075);--line:rgba(255,255,255,.14);--accent:#d7a8ff;--shadow:0 28px 90px rgba(0,0,0,.46)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans SC","Noto Sans TC","PingFang SC","Microsoft YaHei",Arial,sans-serif;background:radial-gradient(circle at 12% 6%,rgba(255,255,255,.75),transparent 25%),radial-gradient(circle at 82% 10%,rgba(150,95,180,.25),transparent 28%),radial-gradient(circle at 52% 95%,rgba(190,80,110,.15),transparent 25%),linear-gradient(135deg,var(--bg1),var(--bg2));min-height:100vh;transition:.35s}html.dark body{background:radial-gradient(circle at 12% 6%,rgba(100,70,150,.20),transparent 25%),radial-gradient(circle at 82% 10%,rgba(165,80,190,.16),transparent 28%),radial-gradient(circle at 52% 95%,rgba(150,55,80,.13),transparent 25%),linear-gradient(135deg,var(--bg1),var(--bg2))}body:before{content:"";position:fixed;inset:10px;border-radius:34px;pointer-events:none;box-shadow:inset 0 0 34px rgba(235,244,248,.36);animation:pulse 5s infinite;z-index:0}@keyframes pulse{50%{box-shadow:inset 0 0 78px rgba(235,244,248,.62)}}a{color:inherit;text-decoration:none}.page{position:relative;z-index:1}.topbar{position:sticky;top:14px;z-index:50;width:min(1320px,calc(100% - 28px));margin:14px auto 0;border:1px solid var(--line);background:var(--glass);backdrop-filter:blur(24px);border-radius:999px;box-shadow:var(--shadow)}.topinner{display:flex;align-items:center;gap:12px;padding:12px 14px}.logo{font-weight:950;letter-spacing:.22em;white-space:nowrap;padding:10px 14px}.nav{display:flex;gap:4px;align-items:center;justify-content:center;flex:1}.nav a{font-size:12px;padding:9px 10px;border-radius:999px;color:var(--muted)}.nav a:hover,.nav a.active{background:var(--glass2);color:var(--ink)}.btn,.pill{border:1px solid var(--line);background:var(--glass2);color:var(--ink);border-radius:999px;padding:10px 14px;font-weight:850;cursor:pointer}.mobile{display:none}.drawer{display:none;position:fixed;inset:0;background:rgba(0,0,0,.50);z-index:80}.drawer.open{display:block}.drawer-panel{height:100%;width:min(86vw,390px);overflow:auto;background:rgba(7,12,22,.92);backdrop-filter:blur(24px);color:white;padding:22px}.drawer-panel a{display:block;border:1px solid rgba(255,255,255,.12);border-radius:18px;margin:8px 0;padding:14px 16px}.container{width:min(1280px,calc(100% - 32px));margin:0 auto;padding:56px 0 96px}.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:22px;margin-bottom:22px}.glass,.card{border:1px solid var(--line);background:var(--glass);backdrop-filter:blur(24px);box-shadow:var(--shadow);border-radius:34px;padding:30px}.kicker{font-size:12px;letter-spacing:.42em;text-transform:uppercase;color:var(--accent);font-weight:950}h1{font-size:clamp(46px,7vw,94px);line-height:.9;margin:18px 0;font-weight:950;letter-spacing:-.06em}h2{font-size:clamp(28px,4vw,50px);line-height:1.05;margin:0 0 18px;font-weight:950;letter-spacing:-.04em}h3{font-size:22px;margin:0 0 12px}p{color:var(--muted);line-height:1.9}.lead{font-size:18px;color:var(--muted)}.chips,.mini-nav{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}.chip,.mini-nav a{border:1px solid var(--line);background:var(--glass2);border-radius:999px;padding:9px 13px;font-weight:850;font-size:13px}.section-title{display:flex;align-items:end;justify-content:space-between;gap:16px;margin:38px 0 16px}.badge{font-size:12px;border:1px solid var(--line);border-radius:999px;padding:7px 10px;color:var(--accent);font-weight:900;white-space:nowrap}.grid{display:grid;gap:18px}.two{grid-template-columns:1fr 1fr}.three{grid-template-columns:repeat(3,1fr)}.bento{display:grid;grid-template-columns:repeat(12,1fr);gap:18px}.span4{grid-column:span 4}.span6{grid-column:span 6}.span8{grid-column:span 8}.span12{grid-column:span 12}.callout{border-left:4px solid var(--accent);padding:16px 18px;background:var(--glass2);border-radius:20px;color:var(--muted);line-height:1.85}table{width:100%;border-collapse:separate;border-spacing:0;overflow:hidden;border-radius:24px;border:1px solid var(--line);background:var(--glass2)}th,td{padding:14px 15px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line);line-height:1.65}th{font-size:12px;letter-spacing:.15em;text-transform:uppercase;color:var(--accent)}tr:last-child td{border-bottom:0}td{color:var(--muted)}td:first-child{color:var(--ink);font-weight:850}.mansion-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.mansion{border:1px solid var(--line);border-radius:24px;background:var(--glass2);padding:18px;text-align:center}.mansion .symbol{font-size:34px;font-weight:950;color:var(--accent)}.mansion p{font-size:13px;line-height:1.65;margin:10px 0 0}.accordion{overflow:hidden;border:1px solid var(--line);background:var(--glass);backdrop-filter:blur(20px);border-radius:28px}.acc-btn{width:100%;border:0;background:transparent;color:var(--ink);padding:20px 22px;text-align:left;display:flex;justify-content:space-between;gap:14px;cursor:pointer}.acc-title{font-size:20px;font-weight:950}.acc-sub{font-size:13px;color:var(--muted);margin-top:4px}.acc-icon{width:34px;height:34px;display:grid;place-items:center;border:1px solid var(--line);border-radius:50%;flex:none;transition:.3s}.accordion.open .acc-icon{transform:rotate(45deg)}.acc-content{display:none;padding:0 22px 22px}.accordion.open .acc-content{display:block}.float{position:fixed;right:18px;bottom:18px;z-index:70;width:54px;height:54px;border-radius:50%;border:1px solid var(--line);background:var(--glass);backdrop-filter:blur(20px);color:var(--ink);font-size:22px;box-shadow:var(--shadow);cursor:pointer}@media(max-width:1180px){.nav{display:none}.mobile{display:inline-flex}.hero,.two,.three{grid-template-columns:1fr}.bento{grid-template-columns:1fr}.span4,.span6,.span8,.span12{grid-column:span 1}.topbar{border-radius:28px}.mansion-grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:720px){body:before{inset:4px;border-radius:24px}.container{width:min(100% - 22px,680px);padding-top:26px}.glass,.card{padding:22px;border-radius:28px}.topinner{justify-content:space-between}.logo{letter-spacing:.14em}h1{font-size:46px}.lead{font-size:15px}th,td{display:block;width:100%}th{display:none}td{border-bottom:0;padding:8px 14px}tr{display:block;border-bottom:1px solid var(--line);padding:8px 0}tr:last-child{border-bottom:0}.mansion-grid{grid-template-columns:1fr 1fr}}
+</style>
+</head>
+<body>
+<div class="page">
+<header class="topbar"><div class="topinner"><button class="btn mobile" id="openDrawer">☰</button><a class="logo" href="home.html">SOUL OS</a><nav class="nav"><a href="home.html">整合大厅</a><a href="astrology.html">占星矩阵</a><a href="ziwei.html">紫微斗数</a><a href="numerology.html">生命灵数</a><a href="humandesign.html">人类图</a><a href="maya.html">玛雅历</a><a class="active" href="mansions.html">二十八星宿</a><a href="qizheng-bazi.html">七政八字</a><a href="crossover.html">交叉比对</a><a href="undertow.html">暗流涌动</a><a href="peak.html">欲望巅峰</a><a href="strategy.html">2026</a><a href="defense.html">防御</a><a href="refinement.html">炼金</a><a href="nucleus.html">Nucleus</a></nav><button class="btn" id="langBtn">简</button><button class="btn" id="themeBtn">天蝎黑</button></div></header>
+<div class="drawer" id="drawer"><div class="drawer-panel"><button class="btn" id="closeDrawer">× 关闭</button><a href="home.html">整合大厅</a><a href="astrology.html">占星矩阵</a><a href="ziwei.html">紫微斗数</a><a href="numerology.html">生命灵数</a><a href="humandesign.html">人类图</a><a href="maya.html">玛雅历</a><a href="mansions.html">二十八星宿</a><a href="qizheng-bazi.html">七政八字</a><a href="crossover.html">交叉比对</a><a href="undertow.html">暗流涌动</a><a href="peak.html">欲望巅峰</a><a href="strategy.html">2026</a><a href="defense.html">防御</a><a href="refinement.html">炼金实验室</a><a href="nucleus.html">全数据仓库</a></div></div>
+
+<main class="container">
+<section class="hero">
+  <div class="glass">
+    <div class="kicker">Lunar Mansions / Revamped</div>
+    <h1>二十八星宿</h1>
+    <p class="lead">心宿，心月狐，毒害宿。它不是普通的敏感，而是一套极深的暗流雷达：能读出关系里的隐藏动机、权力流向与情绪裂缝。</p>
+    <div class="chips"><span class="chip">本命心宿</span><span class="chip">心月狐</span><span class="chip">毒害宿</span><span class="chip">值日女宿</span><span class="chip">暗流雷达</span><span class="chip">把毒变成药</span></div>
+  </div>
+  <div class="glass">
+    <h3>阅读方法</h3>
+    <p>二十八星宿适合观察底层气质、关系反应、人际雷达与阴影使用方式。本命星宿看核心性情，动物象征看外显风格，宿性标记看能量浓度，值日星宿补充行动节奏。</p>
+    <div class="mini-nav"><a href="#core">核心</a><a href="#heart">心宿</a><a href="#fox">心月狐</a><a href="#poison">毒害</a><a href="#cross">交叉</a><a href="#analysis">结论</a></div>
+  </div>
+</section>
+
+<section class="bento">
+  <div class="card span4"><div class="kicker">Heart</div><h3>心宿</h3><p>深层情绪、忠诚、背叛、暗流、真心与伤口。它会先感应，再思考。</p></div>
+  <div class="card span4"><div class="kicker">Fox</div><h3>心月狐</h3><p>观察、魅惑、试探、保留。它不轻易交出信任，也不喜欢被看穿。</p></div>
+  <div class="card span4"><div class="kicker">Poison</div><h3>毒害宿</h3><p>毒不是恶意，而是能量浓度高。高阶可疗愈，低阶会伤人也伤己。</p></div>
+</section>
+
+<div class="section-title" id="core"><h2>一、核心资料</h2><span class="badge">Core Mansion</span></div>
+<section class="grid two">
+  <div class="card"><h3>星宿底层结构</h3><p>Howard 的星宿结构以心宿为核心，心月狐为外显动物象征，毒害宿为能量浓度标记，女宿为值日补充。这组结构共同指向：强直觉、强观察、强防御，也带来很强的语言与情绪杀伤力。</p><div class="callout">一句话：他的雷达不是问题，问题是雷达需要校准。</div></div>
+  <div class="card"><table><thead><tr><th>项目</th><th>资料</th><th>解读</th></tr></thead><tbody><tr><td>本命星宿</td><td>心宿</td><td>二十八星宿中与心、深层情绪、暗流感知、忠诚与背叛议题相关的星宿。</td></tr>
+<tr><td>星宿动物</td><td>心月狐</td><td>狐象征敏锐、魅惑、观察、试探、隐藏动机与深层心理感应。</td></tr>
+<tr><td>宿性标记</td><td>毒害宿</td><td>不是单纯凶意，而是说明情绪、语言、洞察和关系反应具备穿透力与杀伤力。</td></tr>
+<tr><td>值日星宿</td><td>女宿</td><td>轻燥，强调细节、焦虑、秩序、敏感与对环境变化的快速反应。</td></tr>
+<tr><td>核心气质</td><td>暗流雷达</td><td>能感知别人没有说出口的意图、关系里的微妙变化与权力流向。</td></tr>
+<tr><td>核心课题</td><td>把感应转成判断，而不是把感应直接当事实</td><td>心宿的天赋在于识别暗处，但成熟度取决于能否用事实校准雷达。</td></tr>
+</tbody></table></div>
+</section>
+
+<div class="section-title"><h2>二、星宿系统结构</h2><span class="badge">System</span></div>
+<section class="grid two">
+  <div class="card"><h3>二十八星宿的观察方式</h3><p>二十八星宿不是只用来判断吉凶，它更适合描述气质、情绪反应、人际雷达与命运情境。现代阅读时，应将传统象征转化为可实践的心理与人生策略。</p><div class="mansion-grid">
+    <div class="mansion"><div class="symbol">心</div><p>深层情绪</p></div>
+    <div class="mansion"><div class="symbol">狐</div><p>观察与魅惑</p></div>
+    <div class="mansion"><div class="symbol">毒</div><p>穿透与杀伤</p></div>
+    <div class="mansion"><div class="symbol">女</div><p>细节与轻燥</p></div>
+  </div></div>
+  <div class="card"><table><thead><tr><th>层次</th><th>说明</th><th>解读</th></tr></thead><tbody><tr><td>二十八星宿</td><td>以月亮经过黄道附近二十八个区域形成的传统星宿系统。</td><td>它更像一套性情、气质、人际模式与命运情境的象征系统。</td></tr>
+<tr><td>本命星宿</td><td>依据出生日期对应星宿。</td><td>用于观察个人底层气质、反应模式、关系风格与阴影。</td></tr>
+<tr><td>值日星宿</td><td>观察某日能量与事件氛围。</td><td>在个人档案中可作为情绪节奏和行动提醒。</td></tr>
+<tr><td>动物象征</td><td>每宿配有动物意象。</td><td>动物不是装饰，而是帮助理解直觉、欲望、防御和外显风格。</td></tr>
+<tr><td>吉凶标签</td><td>传统会标记吉宿、凶宿、毒害宿等。</td><td>现代阅读不宜只看吉凶，而要看能量如何被使用。</td></tr>
+</tbody></table></div>
+</section>
+
+<div class="section-title" id="heart"><h2>三、心宿核心</h2><span class="badge">Heart Mansion</span></div>
+<section class="card"><table><thead><tr><th>主题</th><th>说明</th><th>转化</th></tr></thead><tbody><tr><td>心宿之心</td><td>心宿与心脏、情绪核心、深处感应相关。</td><td>容易对真心、背叛、忠诚、隐瞒产生强烈反应。</td></tr>
+<tr><td>读心倾向</td><td>能捕捉微妙语气、眼神、迟疑和关系温度变化。</td><td>高阶是洞察，低阶是猜测过度。</td></tr>
+<tr><td>暗流敏感</td><td>对人际里的权力流、利益流、情绪流非常敏锐。</td><td>适合处理危机、心理分析、谈判、策略判断。</td></tr>
+<tr><td>情绪强度</td><td>反应不一定外露，但内在强度很高。</td><td>表面冷静，内里可能已经经历完整风暴。</td></tr>
+<tr><td>忠诚主题</td><td>心宿很重视真诚和一致性。</td><td>小隐瞒也可能被解读成关系结构的裂缝。</td></tr>
+<tr><td>记忆力</td><td>对伤害、细节和不一致之处记得很久。</td><td>需要学会区分重要证据与情绪印痕。</td></tr>
+</tbody></table></section>
+
+<div class="section-title" id="fox"><h2>四、心月狐</h2><span class="badge">Moon Fox</span></div>
+<section class="grid two">
+  <div class="card"><h3>狐的气质</h3><p>心月狐不是外放型热情，而是一种保留的吸引力。它会观察对方是否安全，也会在不确定时试探。成熟后的狐非常会看局；低阶时，则会因为过度试探消耗关系。</p></div>
+  <div class="card"><table><thead><tr><th>主题</th><th>说明</th><th>成熟用法</th></tr></thead><tbody><tr><td>狐的观察</td><td>心月狐会先观察，再决定是否靠近。</td><td>不轻易交出信任，也不喜欢被看穿。</td></tr>
+<tr><td>狐的魅力</td><td>有一种安静、神秘、带距离的吸引力。</td><td>不需要用力讨好，反而在保留中形成气场。</td></tr>
+<tr><td>狐的试探</td><td>在不确定时会测试对方反应。</td><td>低阶表现是反复试探，高阶表现是设定明确标准。</td></tr>
+<tr><td>狐的防御</td><td>受伤后会迅速后退、隐藏、冷处理。</td><td>需要把沉默转换成清楚表达。</td></tr>
+<tr><td>狐的智慧</td><td>擅长在复杂局面中找到最隐蔽的出口。</td><td>适合策略、心理、资料判断、风险识别。</td></tr>
+</tbody></table></div>
+</section>
+
+<div class="section-title" id="poison"><h2>五、毒害宿</h2><span class="badge">Poison Mansion</span></div>
+<section class="card"><table><thead><tr><th>层次</th><th>说明</th><th>转化</th></tr></thead><tbody><tr><td>毒害宿的毒</td><td>毒不是恶意，而是能量浓度高。</td><td>一句话、一个眼神、一个判断，都可能很有穿透力。</td></tr>
+<tr><td>语言杀伤力</td><td>看穿后容易说中对方最痛处。</td><td>高阶用法是精准治疗；低阶用法是精准伤人。</td></tr>
+<tr><td>情绪残留</td><td>被伤害后不容易马上放下。</td><td>需要建立情绪排毒机制，而不是反复回放。</td></tr>
+<tr><td>关系极端</td><td>爱与防御都很深。</td><td>越在乎，越容易用冷处理或毒针保护自己。</td></tr>
+<tr><td>自我中毒</td><td>毒害宿也会伤到自己。</td><td>若洞察没有出口，就会变成内耗、怀疑和身体压力。</td></tr>
+</tbody></table></section>
+
+<div class="section-title"><h2>六、值日女宿</h2><span class="badge">Day Mansion</span></div>
+<section class="card"><table><thead><tr><th>主题</th><th>说明</th><th>应用</th></tr></thead><tbody><tr><td>女宿值日</td><td>女宿带有轻燥、细节、秩序、焦虑、对环境不稳定敏感的气质。</td><td>在 Howard 档案中，它会加重对细节、日常与小变化的反应。</td></tr>
+<tr><td>与心宿叠加</td><td>心宿看暗流，女宿看细节。</td><td>两者叠加会形成极细腻的风险扫描能力。</td></tr>
+<tr><td>低阶状态</td><td>对小事过度紧张，把细节误读成重大危机。</td><td>需要用事实、时间、重复模式来校准。</td></tr>
+<tr><td>高阶状态</td><td>在细节中发现真正的结构问题。</td><td>适合质检、策略、系统优化、关系风险识别。</td></tr>
+<tr><td>行动提醒</td><td>细节值得看，但不能让细节绑架全局。</td><td>当焦虑升高时，先问：这是事实、推测，还是旧伤被触发？</td></tr>
+</tbody></table></section>
+
+<div class="section-title"><h2>七、阴影与防御机制</h2><span class="badge">Shadow</span></div>
+<section class="card"><table><thead><tr><th>阴影</th><th>表现</th><th>转化</th></tr></thead><tbody><tr><td>把雷达当事实</td><td>只因为感觉不对，就直接认定对方有问题。</td><td>需要建立证据层级：感觉、线索、事实、结论。</td></tr>
+<tr><td>反复试探</td><td>用冷淡、追问、观察、沉默测试别人。</td><td>成熟做法是直接提出需求和边界。</td></tr>
+<tr><td>语言带毒</td><td>受伤时说话非常准确，也非常锋利。</td><td>先暂停，再表达；不要在情绪峰值下定终身判决。</td></tr>
+<tr><td>过度记仇</td><td>对过去细节反复复盘。</td><td>复盘只保留教训，不保留自我折磨。</td></tr>
+<tr><td>自我封闭</td><td>一旦觉得不安全，就完全退回壳里。</td><td>安全不是不接触，而是可控地接触。</td></tr>
+<tr><td>吸引危险感</td><td>容易被神秘、强烈、有暗面的人吸引。</td><td>强烈不等于可靠，需要时间验证。</td></tr>
+</tbody></table></section>
+
+<div class="section-title"><h2>八、高阶天赋</h2><span class="badge">Gifts</span></div>
+<section class="card"><table><thead><tr><th>天赋</th><th>说明</th><th>应用</th></tr></thead><tbody><tr><td>危机判断</td><td>能在局势变化前感到暗流。</td><td>适合做风险识别、谈判前判断、关系诊断。</td></tr>
+<tr><td>心理洞察</td><td>能看见别人隐藏的动机和创伤。</td><td>适合心理分析、命理咨询、深度内容创作。</td></tr>
+<tr><td>资源雷达</td><td>能察觉权力和利益如何流动。</td><td>适合策略、商业判断、组织观察。</td></tr>
+<tr><td>文字穿透</td><td>表达可以直指核心。</td><td>适合写深度报告、人格分析、关系洞察。</td></tr>
+<tr><td>保护能力</td><td>能提前看见危险，保护自己和重要的人。</td><td>前提是不用过度防御伤害关系。</td></tr>
+<tr><td>转化能力</td><td>在暗处找到重生路径。</td><td>心宿真正高阶是把痛感转成智慧。</td></tr>
+</tbody></table></section>
+
+<div class="section-title"><h2>九、亲密关系模式</h2><span class="badge">Relationship</span></div>
+<section class="card"><table><thead><tr><th>主题</th><th>表现</th><th>成熟方向</th></tr></thead><tbody><tr><td>亲密需求</td><td>需要深度、忠诚、透明和情绪真实。</td><td>浅层社交无法满足心宿的关系需求。</td></tr>
+<tr><td>信任机制</td><td>先观察，再慢慢放行。</td><td>信任不是一次性给出，而是通过细节累积。</td></tr>
+<tr><td>触发点</td><td>隐瞒、敷衍、语气变化、承诺不一致。</td><td>这些会迅速启动背叛雷达。</td></tr>
+<tr><td>防御方式</td><td>冷处理、沉默、语气变锋利、突然抽离。</td><td>要练习在防御前先说出害怕。</td></tr>
+<tr><td>成熟关系</td><td>允许深度，也允许空间。</td><td>真正可靠的人不是让你永不害怕，而是能和你一起处理害怕。</td></tr>
+</tbody></table></section>
+
+<div class="section-title"><h2>十、事业与副业应用</h2><span class="badge">Career</span></div>
+<section class="card"><table><thead><tr><th>领域</th><th>说明</th><th>应用</th></tr></thead><tbody><tr><td>适合方向</td><td>心理洞察、危机管理、命理分析、数据审查、策略研究、风险判断。</td><td>心宿适合看别人看不见的层次。</td></tr>
+<tr><td>工作优势</td><td>发现漏洞、识别不一致、看穿虚假包装。</td><td>适合做质量控制、策略顾问、深度分析。</td></tr>
+<tr><td>工作风险</td><td>过度防备同事、把职场暗流全部放大。</td><td>需要分清真实风险和情绪投射。</td></tr>
+<tr><td>表达方式</td><td>长篇深度输出比碎片表达更适合。</td><td>心宿的洞察需要容器，报告、档案、系统页面最适合。</td></tr>
+<tr><td>领导方式</td><td>不适合浮夸激励，适合冷静诊断。</td><td>用精准判断建立权威。</td></tr>
+</tbody></table></section>
+
+<div class="section-title"><h2>十一、日常练习</h2><span class="badge">Practice</span></div>
+<section class="card"><table><thead><tr><th>练习</th><th>方法</th><th>目的</th></tr></thead><tbody><tr><td>雷达校准表</td><td>每次感觉不对，记录：感受、线索、事实、后续验证。</td><td>让直觉变成可训练工具。</td></tr>
+<tr><td>毒针暂停法</td><td>想说重话时，延迟 20 分钟。</td><td>保护关系，也保护自己的能量。</td></tr>
+<tr><td>暗流复盘</td><td>每周复盘一次真正发生的风险。</td><td>找出哪些感觉准确，哪些只是旧伤。</td></tr>
+<tr><td>身体排毒</td><td>用出汗、走路、拉伸、洗澡释放情绪残留。</td><td>心宿的毒需要出口，不能一直留在体内。</td></tr>
+<tr><td>边界句练习</td><td>我现在感觉不安，但我需要先确认事实。</td><td>把攻击改成沟通。</td></tr>
+<tr><td>关系筛选</td><td>观察对方是否稳定、透明、能承担对话。</td><td>不要只被强烈感吸引。</td></tr>
+</tbody></table></section>
+
+<div class="section-title" id="cross"><h2>十二、跨系统交叉验证</h2><span class="badge">Crossover</span></div>
+<section class="card"><table><thead><tr><th>系统</th><th>对应</th><th>结论</th></tr></thead><tbody><tr><td>与西方占星</td><td>心宿与月水金天蝎六宫高度呼应。</td><td>深度直觉、危机雷达、情绪与日常细节绑定。</td></tr>
+<tr><td>与人类图</td><td>心宿雷达与 Splenic 直觉权威呼应。</td><td>身体和暗流感应都强，但需要校准。</td></tr>
+<tr><td>与玛雅历</td><td>心宿与红蛇都强调本能、危险感、生命反应。</td><td>强烈感是燃料，不是最终答案。</td></tr>
+<tr><td>与紫微斗数</td><td>命宫借迁移太阴天同，与心宿对外界情绪场敏感相呼应。</td><td>外部环境会明显影响自我状态。</td></tr>
+<tr><td>与生命灵数</td><td>25/7 与心宿都追问真相。</td><td>研究、质疑、洞察是核心能力。</td></tr>
+<tr><td>与八字</td><td>辛金建禄与毒害宿的锋利感相似。</td><td>判断力很强，重点是别把刀转向自己。</td></tr>
+<tr><td>与七政四余</td><td>命身双金与心宿毒针式精准形成共振。</td><td>精密、切割、洞察、界线是共同语言。</td></tr>
+</tbody></table></section>
+
+<div class="section-title"><h2>十三、现实策略</h2><span class="badge">Strategy</span></div>
+<section class="card"><table><thead><tr><th>领域</th><th>建议</th><th>执行重点</th></tr></thead><tbody><tr><td>感情</td><td>不要用测试代替沟通。</td><td>先说不安，再谈事实，不要直接下审判。</td></tr>
+<tr><td>工作</td><td>把暗流洞察变成报告和流程。</td><td>不要只在心里看穿，要让判断被看见。</td></tr>
+<tr><td>金钱</td><td>适合风险审查、资源判断、成本洞察。</td><td>但不要因过度怀疑错过合理机会。</td></tr>
+<tr><td>健康</td><td>情绪毒素要有身体出口。</td><td>出汗、睡眠、饮食稳定是排毒基础。</td></tr>
+<tr><td>副业</td><td>适合深度命理、心理洞察、关系分析、风险报告。</td><td>把雷达产品化。</td></tr>
+<tr><td>2026</td><td>适合建立公开洞察系统。</td><td>用长期输出替代情绪化反应。</td></tr>
+</tbody></table></section>
+
+<div class="section-title" id="analysis"><h2>十四、星宿深度结论</h2><span class="badge">Long Synthesis</span></div>
+<section class="grid">
+
+  <article class="accordion open">
+    <button class="acc-btn"><span><span class="acc-title">1. 心宿的核心不是多疑，而是对暗流的高敏感度</span><span class="acc-sub">Lunar Mansion Synthesis 1</span></span><span class="acc-icon">＋</span></button>
+    <div class="acc-content"><p>Howard 的本命星宿为心宿，心月狐，且带有毒害宿性质。这个组合不能简单理解成负面标签。它更像是一套天生的暗流侦测系统：能够感到别人语气中的不一致、关系里的隐瞒、承诺里的裂缝、场域里的权力变化。普通人可能只看见表面事件，心宿会先感到背后的动机和情绪流向。问题不在于雷达存在，而在于是否能校准雷达。未经训练的雷达会把每一次不安都当成事实；经过训练的雷达则能成为极强的判断力。</p></div>
+  </article>
+
+
+  <article class="accordion open">
+    <button class="acc-btn"><span><span class="acc-title">2. 心月狐让他带有观察、魅惑与防御并存的气质</span><span class="acc-sub">Lunar Mansion Synthesis 2</span></span><span class="acc-icon">＋</span></button>
+    <div class="acc-content"><p>心月狐的“狐”不是单纯狡猾，而是敏锐、保留、观察和心理试探。Howard 不会轻易把全部自己交出去，他会先看、先听、先试探，确认对方是否稳定、真诚、可信。这样的气质会形成一种神秘吸引力：不完全外露，不急着讨好，反而让人想靠近。但低阶心月狐会用过度试探保护自己，反复观察别人反应，直到关系变得紧绷。成熟的狐，不需要用测试确认爱，而是用清楚标准筛选关系。</p></div>
+  </article>
+
+
+  <article class="accordion ">
+    <button class="acc-btn"><span><span class="acc-title">3. 毒害宿的“毒”是一种浓度，不是恶意</span><span class="acc-sub">Lunar Mansion Synthesis 3</span></span><span class="acc-icon">＋</span></button>
+    <div class="acc-content"><p>毒害宿容易被误解成坏，但真正的重点是能量浓度高。Howard 的情绪、语言、判断和记忆都有穿透性。他看穿一个人时，往往能说中对方最不想被看见的地方。高阶时，这是治疗能力、分析能力、危机处理能力；低阶时，就会变成语言毒针、冷处理、报复性沉默或反复内耗。毒害宿最需要修炼的是：看穿之后，选择怎样使用这份看穿。真正的力量不是刺伤别人，而是精准地命名问题。</p></div>
+  </article>
+
+
+  <article class="accordion ">
+    <button class="acc-btn"><span><span class="acc-title">4. 女宿值日让细节敏感度进一步提高</span><span class="acc-sub">Lunar Mansion Synthesis 4</span></span><span class="acc-icon">＋</span></button>
+    <div class="acc-content"><p>值日女宿带有轻燥、细节、秩序、焦虑和对环境变化快速反应的性质。它与心宿叠加，会让 Howard 不只看见暗流，也会看见细节里的异常。一个表情、一句迟疑、一个时间差、一处流程变化，都可能触发他的警觉。高阶状态下，这非常适合质检、策略、系统优化和风险判断；低阶状态下，则可能因为小事过度焦虑，把细节误读成重大危机。因此，他需要一套事实校准流程，而不是只依赖当下感受。</p></div>
+  </article>
+
+
+  <article class="accordion ">
+    <button class="acc-btn"><span><span class="acc-title">5. 关系是心宿最大的修炼场</span><span class="acc-sub">Lunar Mansion Synthesis 5</span></span><span class="acc-icon">＋</span></button>
+    <div class="acc-content"><p>心宿在亲密关系里尤其强烈，因为它无法满足于表面和平。Howard 需要深度、忠诚、透明、情绪真实和稳定回应。若对方含糊、逃避、前后不一致，他的背叛雷达会迅速启动。可是，雷达启动不代表关系一定有问题，也可能是旧伤被触发。成熟的关系模式是：当不安出现时，不直接攻击、不冷处理，而是说出“我现在感觉不安，我想确认事实”。这句话会比任何试探都更有效。</p></div>
+  </article>
+
+
+  <article class="accordion ">
+    <button class="acc-btn"><span><span class="acc-title">6. 心宿最适合被训练成专业洞察，而不是留在内耗里</span><span class="acc-sub">Lunar Mansion Synthesis 6</span></span><span class="acc-icon">＋</span></button>
+    <div class="acc-content"><p>Howard 的心宿能量非常适合用于工作和副业：心理洞察、命理分析、风险审查、资料判断、策略研究、关系分析、危机处理。只要他把暗流雷达整理成方法，就会变成独特的专业资产。相反，如果这些洞察只留在脑内，就会变成不断怀疑、不断复盘、不断消耗身体的内耗。心宿的能量需要容器，最好的容器就是报告、档案、数据库、咨询框架和长期输出。</p></div>
+  </article>
+
+
+  <article class="accordion ">
+    <button class="acc-btn"><span><span class="acc-title">7. 最终星宿结论：把毒变成药，把雷达变成系统</span><span class="acc-sub">Lunar Mansion Synthesis 7</span></span><span class="acc-icon">＋</span></button>
+    <div class="acc-content"><p>心宿给 Howard 的不是轻松人生，而是深度人生。它让他更早看见阴影，也更容易受阴影影响。真正的成长不是把自己变得迟钝，而是把敏锐变得有边界。把感觉分层：这是身体讯号、这是情绪旧伤、这是现实线索、这是已确认事实。把语言收束：不在情绪峰值时放毒针。把洞察外化：写成报告、流程和系统。这样，毒害宿不再是伤人伤己的毒，而会成为能辨别真伪、处理危机、保护生命的药。</p></div>
+  </article>
+
+</section>
+</main>
+<button class="float" id="topBtn">↑</button>
+</div>
+
+<script>
+const s2tMap = {"这":"這","个":"個","点":"點","觉":"覺","体":"體","关":"關","系":"係","统":"統","后":"後","资":"資","数":"數","据":"據","库":"庫","宫":"宮","与":"與","万":"萬","专":"專","业":"業","现":"現","简":"簡","开":"開","门":"門","档":"檔","画":"畫","过":"過","运":"運","动":"動","灵":"靈","历":"曆","玛":"瑪","亚":"亞","红":"紅","龙":"龍","风":"風","险":"險","错":"錯","认":"認","为":"為","无":"無","压":"壓","绪":"緒","气":"氣","断":"斷","结":"結","构":"構","权":"權","钱":"錢","财":"財","务":"務","声":"聲","应":"應","该":"該","类":"類","选":"選","择":"擇","题":"題","问":"問","输":"輸","复":"複","制":"製","时":"時","间":"間","郑":"鄭","岁":"歲","阴":"陰","阳":"陽","贵":"貴","独":"獨","双":"雙","长":"長","学":"學","习":"習","疗":"療","愈":"癒","职":"職","场":"場","稳":"穩","爱":"愛","实":"實","验":"驗","浅":"淺","蝎":"蠍","处":"處","狮":"獅","献":"獻","责":"責","备":"備","识":"識","创":"創","见":"見","触":"觸","发":"發","冲":"衝","击":"擊","读":"讀","观":"觀","内":"內","层":"層","测":"測","试":"試","逻":"邏","辑":"輯","标":"標","签":"籤","语":"語","条":"條","辅":"輔","轴":"軸","态":"態","强":"強","异":"異","轻":"輕","艺":"藝","医":"醫","顾":"顧","师":"師","从":"從","来":"來","写":"寫","听":"聽","说":"說","里":"裡","线":"線","阶":"階","级":"級","迁":"遷","变":"變","总":"總","怀":"懷","价":"價","质":"質","极":"極","给":"給","带":"帶","还":"還","显":"顯","隐":"隱","让":"讓","样":"樣","张":"張","战":"戰","争":"爭","飞":"飛","禄":"祿","盘":"盤","补":"補","护":"護","闭":"閉","启":"啟","须":"須","则":"則","众":"眾","炼":"煉","涌":"湧","欲":"慾","仓":"倉","导航":"導航","节":"節","调":"調","签":"籤","层":"層","细":"細","条":"條","证":"證","验":"驗","伤":"傷","药":"藥","过":"過"};
+function toTraditional(str){return str.split("").map(ch=>s2tMap[ch]||ch).join("")}
+let traditional=localStorage.getItem("soul_lang")==="trad";let originalText=new WeakMap();
+function convertPage(){const walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT,{acceptNode(node){if(!node.nodeValue.trim())return NodeFilter.FILTER_REJECT;if(node.parentElement&&["SCRIPT","STYLE"].includes(node.parentElement.tagName))return NodeFilter.FILTER_REJECT;return NodeFilter.FILTER_ACCEPT;}});const nodes=[];while(walker.nextNode())nodes.push(walker.currentNode);nodes.forEach(node=>{if(!originalText.has(node))originalText.set(node,node.nodeValue);node.nodeValue=traditional?toTraditional(originalText.get(node)):originalText.get(node);});document.getElementById("langBtn").textContent=traditional?"繁":"简";}
+document.querySelectorAll(".acc-btn").forEach(btn=>btn.onclick=()=>btn.closest(".accordion").classList.toggle("open"));
+document.getElementById("themeBtn").onclick=()=>{const isDark=document.documentElement.classList.toggle("dark");localStorage.setItem("soul_theme",isDark?"dark":"light");document.getElementById("themeBtn").textContent=isDark?(traditional?"天蠍黑":"天蝎黑"):(traditional?"辛金銀":"辛金银");};
+document.getElementById("langBtn").onclick=()=>{traditional=!traditional;localStorage.setItem("soul_lang",traditional?"trad":"simp");convertPage();};
+document.getElementById("topBtn").onclick=()=>scrollTo({top:0,behavior:"smooth"});
+document.getElementById("openDrawer").onclick=()=>document.getElementById("drawer").classList.add("open");
+document.getElementById("closeDrawer").onclick=()=>document.getElementById("drawer").classList.remove("open");
+document.getElementById("drawer").onclick=e=>{if(e.target.id==="drawer")document.getElementById("drawer").classList.remove("open");};
+if((localStorage.getItem("soul_theme")||"dark")==="dark")document.documentElement.classList.add("dark");else document.documentElement.classList.remove("dark");
+convertPage();
+</script>
+</body>
+</html>
