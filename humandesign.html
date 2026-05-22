@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="zh-Hans" class="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Soul OS｜人类图 Human Design</title>
+<style>
+:root{--bg1:#edf1f4;--bg2:#cad7df;--ink:#12202e;--muted:#546473;--glass:rgba(255,255,255,.58);--glass2:rgba(255,255,255,.31);--line:rgba(255,255,255,.56);--accent:#77aab8;--shadow:0 26px 90px rgba(26,43,58,.16)}
+html.dark{--bg1:#03050b;--bg2:#111b2b;--ink:#f7f9fc;--muted:#b4bfca;--glass:rgba(12,19,31,.66);--glass2:rgba(255,255,255,.075);--line:rgba(255,255,255,.14);--accent:#9ee6d5;--shadow:0 28px 90px rgba(0,0,0,.46)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans SC","Noto Sans TC","PingFang SC","Microsoft YaHei",Arial,sans-serif;background:radial-gradient(circle at 12% 6%,rgba(255,255,255,.75),transparent 25%),radial-gradient(circle at 82% 10%,rgba(120,190,180,.30),transparent 28%),radial-gradient(circle at 52% 95%,rgba(130,180,210,.18),transparent 25%),linear-gradient(135deg,var(--bg1),var(--bg2));min-height:100vh;transition:.35s}html.dark body{background:radial-gradient(circle at 12% 6%,rgba(80,130,120,.20),transparent 25%),radial-gradient(circle at 82% 10%,rgba(90,190,170,.14),transparent 28%),radial-gradient(circle at 52% 95%,rgba(88,130,190,.13),transparent 25%),linear-gradient(135deg,var(--bg1),var(--bg2))}body:before{content:"";position:fixed;inset:10px;border-radius:34px;pointer-events:none;box-shadow:inset 0 0 34px rgba(235,244,248,.36);animation:pulse 5s infinite;z-index:0}@keyframes pulse{50%{box-shadow:inset 0 0 78px rgba(235,244,248,.62)}}a{color:inherit;text-decoration:none}.page{position:relative;z-index:1}.topbar{position:sticky;top:14px;z-index:50;width:min(1320px,calc(100% - 28px));margin:14px auto 0;border:1px solid var(--line);background:var(--glass);backdrop-filter:blur(24px);border-radius:999px;box-shadow:var(--shadow)}.topinner{display:flex;align-items:center;gap:12px;padding:12px 14px}.logo{font-weight:950;letter-spacing:.22em;white-space:nowrap;padding:10px 14px}.nav{display:flex;gap:4px;align-items:center;justify-content:center;flex:1}.nav a{font-size:12px;padding:9px 10px;border-radius:999px;color:var(--muted)}.nav a:hover,.nav a.active{background:var(--glass2);color:var(--ink)}.btn,.pill{border:1px solid var(--line);background:var(--glass2);color:var(--ink);border-radius:999px;padding:10px 14px;font-weight:850;cursor:pointer}.mobile{display:none}.drawer{display:none;position:fixed;inset:0;background:rgba(0,0,0,.50);z-index:80}.drawer.open{display:block}.drawer-panel{height:100%;width:min(86vw,390px);overflow:auto;background:rgba(7,12,22,.92);backdrop-filter:blur(24px);color:white;padding:22px}.drawer-panel a{display:block;border:1px solid rgba(255,255,255,.12);border-radius:18px;margin:8px 0;padding:14px 16px}.container{width:min(1280px,calc(100% - 32px));margin:0 auto;padding:56px 0 96px}.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:22px;margin-bottom:22px}.glass,.card{border:1px solid var(--line);background:var(--glass);backdrop-filter:blur(24px);box-shadow:var(--shadow);border-radius:34px;padding:30px}.kicker{font-size:12px;letter-spacing:.42em;text-transform:uppercase;color:var(--accent);font-weight:950}h1{font-size:clamp(46px,7vw,94px);line-height:.9;margin:18px 0;font-weight:950;letter-spacing:-.06em}h2{font-size:clamp(28px,4vw,50px);line-height:1.05;margin:0 0 18px;font-weight:950;letter-spacing:-.04em}h3{font-size:22px;margin:0 0 12px}p{color:var(--muted);line-height:1.9}.lead{font-size:18px;color:var(--muted)}.chips,.mini-nav{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}.chip,.mini-nav a{border:1px solid var(--line);background:var(--glass2);border-radius:999px;padding:9px 13px;font-weight:850;font-size:13px}.section-title{display:flex;align-items:end;justify-content:space-between;gap:16px;margin:38px 0 16px}.badge{font-size:12px;border:1px solid var(--line);border-radius:999px;padding:7px 10px;color:var(--accent);font-weight:900;white-space:nowrap}.grid{display:grid;gap:18px}.two{grid-template-columns:1fr 1fr}.three{grid-template-columns:repeat(3,1fr)}.bento{display:grid;grid-template-columns:repeat(12,1fr);gap:18px}.span4{grid-column:span 4}.span6{grid-column:span 6}.span8{grid-column:span 8}.span12{grid-column:span 12}.callout{border-left:4px solid var(--accent);padding:16px 18px;background:var(--glass2);border-radius:20px;color:var(--muted);line-height:1.85}table{width:100%;border-collapse:separate;border-spacing:0;overflow:hidden;border-radius:24px;border:1px solid var(--line);background:var(--glass2)}th,td{padding:14px 15px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line);line-height:1.65}th{font-size:12px;letter-spacing:.15em;text-transform:uppercase;color:var(--accent)}tr:last-child td{border-bottom:0}td{color:var(--muted)}td:first-child{color:var(--ink);font-weight:850}.bodygraph{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.center{border:1px solid var(--line);border-radius:22px;background:var(--glass2);padding:16px;text-align:center}.center b{display:block;color:var(--accent);font-size:15px;margin-bottom:6px}.center span{font-size:12px;color:var(--muted);line-height:1.5}.accordion{overflow:hidden;border:1px solid var(--line);background:var(--glass);backdrop-filter:blur(20px);border-radius:28px}.acc-btn{width:100%;border:0;background:transparent;color:var(--ink);padding:20px 22px;text-align:left;display:flex;justify-content:space-between;gap:14px;cursor:pointer}.acc-title{font-size:20px;font-weight:950}.acc-sub{font-size:13px;color:var(--muted);margin-top:4px}.acc-icon{width:34px;height:34px;display:grid;place-items:center;border:1px solid var(--line);border-radius:50%;flex:none;transition:.3s}.accordion.open .acc-icon{transform:rotate(45deg)}.acc-content{display:none;padding:0 22px 22px}.accordion.open .acc-content{display:block}.note{font-size:13px;color:var(--muted)}.float{position:fixed;right:18px;bottom:18px;z-index:70;width:54px;height:54px;border-radius:50%;border:1px solid var(--line);background:var(--glass);backdrop-filter:blur(20px);color:var(--ink);font-size:22px;box-shadow:var(--shadow);cursor:pointer}@media(max-width:1180px){.nav{display:none}.mobile{display:inline-flex}.hero,.two,.three{grid-template-columns:1fr}.bento{grid-template-columns:1fr}.span4,.span6,.span8,.span12{grid-column:span 1}.topbar{border-radius:28px}.bodygraph{grid-template-columns:repeat(2,1fr)}}@media(max-width:720px){body:before{inset:4px;border-radius:24px}.container{width:min(100% - 22px,680px);padding-top:26px}.glass,.card{padding:22px;border-radius:28px}.topinner{justify-content:space-between}.logo{letter-spacing:.14em}h1{font-size:46px}.lead{font-size:15px}th,td{display:block;width:100%}th{display:none}td{border-bottom:0;padding:8px 14px}tr{display:block;border-bottom:1px solid var(--line);padding:8px 0}tr:last-child{border-bottom:0}.bodygraph{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="page">
+<header class="topbar"><div class="topinner"><button class="btn mobile" id="openDrawer">☰</button><a class="logo" href="home.html">SOUL OS</a><nav class="nav"><a href="home.html">整合大厅</a><a href="astrology.html">占星矩阵</a><a href="ziwei.html">紫微斗数</a><a href="numerology.html">生命灵数</a><a class="active" href="humandesign.html">人类图</a><a href="maya.html">玛雅历</a><a href="mansions.html">二十八星宿</a><a href="qizheng-bazi.html">七政八字</a><a href="crossover.html">交叉比对</a><a href="undertow.html">暗流涌动</a><a href="peak.html">欲望巅峰</a><a href="strategy.html">2026</a><a href="defense.html">防御</a><a href="refinement.html">炼金</a><a href="nucleus.html">Nucleus</a></nav><button class="btn" id="langBtn">简</button><button class="btn" id="themeBtn">天蝎黑</button></div></header>
+<div class="drawer" id="drawer"><div class="drawer-panel"><button class="btn" id="closeDrawer">× 关闭</button><a href="home.html">整合大厅</a><a href="astrology.html">占星矩阵</a><a href="ziwei.html">紫微斗数</a><a href="numerology.html">生命灵数</a><a href="humandesign.html">人类图</a><a href="maya.html">玛雅历</a><a href="mansions.html">二十八星宿</a><a href="qizheng-bazi.html">七政八字</a><a href="crossover.html">交叉比对</a><a href="undertow.html">暗流涌动</a><a href="peak.html">欲望巅峰</a><a href="strategy.html">2026</a><a href="defense.html">防御</a><a href="refinement.html">炼金实验室</a><a href="nucleus.html">全数据仓库</a></div></div>
+
+<main class="container">
+<section class="hero">
+  <div class="glass">
+    <div class="kicker">Human Design / Revamped</div>
+    <h1>人类图</h1>
+    <p class="lead">Projector 投射者、Splenic 直觉权威、1/3 人生角色，是这张图的三条主线。它指向一种不靠硬冲取胜的人生方式：先看见系统，再等待正确位置。</p>
+    <div class="chips"><span class="chip">Projector 投射者</span><span class="chip">等待邀请</span><span class="chip">Splenic 直觉权威</span><span class="chip">1/3 人生角色</span><span class="chip">修正与技艺</span><span class="chip">成功 / 苦涩</span></div>
+  </div>
+  <div class="glass">
+    <h3>阅读方法</h3>
+    <p>人类图优先看类型、策略、权威与人生角色。类型说明能量如何运作；策略说明如何进入关系和机会；权威说明如何做决定；人生角色说明学习方式和人生剧本。</p>
+    <div class="mini-nav"><a href="#core">核心</a><a href="#type">类型</a><a href="#authority">权威</a><a href="#profile">1/3</a><a href="#centers">中心</a><a href="#analysis">结论</a></div>
+  </div>
+</section>
+
+<section class="bento">
+  <div class="card span4"><div class="kicker">Type</div><h3>投射者</h3><p>价值不在做最多，而在看得准。适合识别系统、诊断问题、重组资源。</p></div>
+  <div class="card span4"><div class="kicker">Authority</div><h3>直觉权威</h3><p>身体第一瞬间的安全感非常关键。真正的直觉很快、很轻、很安静。</p></div>
+  <div class="card span4"><div class="kicker">Profile</div><h3>1/3</h3><p>先研究，再试错；先建立底层资料，再通过现实碰撞修正方法。</p></div>
+</section>
+
+<div class="section-title" id="core"><h2>一、核心资料</h2><span class="badge">Core Design</span></div>
+<section class="grid two">
+  <div class="card"><h3>核心结构</h3><p>Howard 的人类图主线很清晰：他不是来持续燃烧自己，而是来识别系统、提出洞察、修正方向。投射者的成功来自正确识别；直觉权威提醒他相信身体；1/3 角色则要求他通过研究和试错建立可靠方法。</p><div class="callout">一句话：不是世界的发动机，而是系统的导航者。</div></div>
+  <div class="card"><table><thead><tr><th>项目</th><th>资料</th><th>解读</th></tr></thead><tbody><tr><td>类型</td><td>Projector 投射者</td><td>人生不是靠持续输出和硬冲取胜，而是靠洞察、识别系统、等待正确邀请与被看见。</td></tr>
+<tr><td>策略</td><td>等待邀请</td><td>重要关系、合作、事业方向和长期承诺，不适合靠主动追逐证明自己。</td></tr>
+<tr><td>内在权威</td><td>Splenic 直觉权威</td><td>身体会在第一瞬间给出安全或不安全的讯号；想太久反而容易混入恐惧和脑内解释。</td></tr>
+<tr><td>人生角色</td><td>1/3</td><td>先研究、建立基础，再通过现实试错修正。不是一次就对，而是在试验中形成可靠方法。</td></tr>
+<tr><td>人生主题</td><td>成功 / 苦涩</td><td>当被正确看见并进入正确邀请，会感到成功；当用力追逐或被错误投射消耗，会感到苦涩。</td></tr>
+<tr><td>可能通道</td><td>18-58、48-16 待清晰原图核对</td><td>与修正、深度、技艺、系统改善相关，可作为倾向参考。</td></tr>
+<tr><td>核心提醒</td><td>先建立不可替代的洞察，再进入正确场域</td><td>投射者不是没有能量，而是不适合把自己当发动机使用。</td></tr>
+</tbody></table></div>
+</section>
+
+<div class="section-title" id="type"><h2>二、Projector 投射者</h2><span class="badge">Type & Strategy</span></div>
+<section class="grid two">
+  <div class="card"><h3>类型机制</h3><p>投射者最怕把自己当成持续输出型机器。越想证明自己，越容易进入错误邀请，最后变得苦涩。真正的策略是先建立清晰的专业频率，让正确的人看见。</p></div>
+  <div class="card"><table><thead><tr><th>层次</th><th>说明</th><th>转化</th></tr></thead><tbody><tr><td>投射者的本质</td><td>投射者擅长看见别人系统如何运作。</td><td>他的价值不是做最多，而是看得准、点得中、改得动。</td></tr>
+<tr><td>能量模式</td><td>不是稳定持续的生产型能量。</td><td>长期硬扛会累积苦涩，甚至让身体、情绪和自我价值一起下滑。</td></tr>
+<tr><td>成功路径</td><td>被看见、被邀请、被承认。</td><td>不是等别人拯救，而是先把自己的洞察练到值得被邀请。</td></tr>
+<tr><td>错误路径</td><td>主动追着世界证明自己。</td><td>越想证明，越容易进入不适合的关系、工作和合作。</td></tr>
+<tr><td>高级用法</td><td>成为系统顾问、观察者、诊断者、策略师。</td><td>最适合看结构、看漏洞、看人和资源如何重新配置。</td></tr>
+</tbody></table></div>
+</section>
+
+<div class="section-title"><h2>三、等待邀请的实际用法</h2><span class="badge">Strategy</span></div>
+<section class="card"><table><thead><tr><th>主题</th><th>说明</th><th>执行方式</th></tr></thead><tbody><tr><td>等待邀请不是被动</td><td>它不是坐着不动，而是先让世界看见你的专业频率。</td><td>公开作品、清晰定位、稳定输出，都是让邀请发生的方式。</td></tr>
+<tr><td>什么需要邀请</td><td>事业合作、亲密关系、长期承诺、重大转向、进入别人系统。</td><td>这些领域若强行闯入，最容易被误解或被消耗。</td></tr>
+<tr><td>什么不必等待</td><td>学习、整理资料、练技能、照顾身体、建立作品集、更新系统。</td><td>这些是投射者可以主动做的内功。</td></tr>
+<tr><td>正确邀请的感觉</td><td>身体放松、被理解、对方知道你真正擅长什么。</td><td>不是对方随便给机会，而是对方看见你的核心价值。</td></tr>
+<tr><td>错误邀请的感觉</td><td>对方只想你救火、填坑、情绪劳动，或把你当免费顾问。</td><td>即使机会看起来不错，也会很快变苦涩。</td></tr>
+</tbody></table></section>
+
+<div class="section-title" id="authority"><h2>四、Splenic 直觉权威</h2><span class="badge">Authority</span></div>
+<section class="grid two">
+  <div class="card"><h3>身体比大脑更快</h3><p>直觉权威不是想很久之后的结论，而是身体第一瞬间的知道。它通常很短、很细、很安静。Howard 需要练习记录第一反应，并区分直觉、恐惧和旧创伤。</p></div>
+  <div class="card"><table><thead><tr><th>层次</th><th>说明</th><th>练习</th></tr></thead><tbody><tr><td>直觉权威</td><td>Splenic 权威是一瞬间的身体知道。</td><td>它不是情绪波，也不是反复推理，而是当下很细、很快、很安静的讯号。</td></tr>
+<tr><td>安全感讯号</td><td>身体会先知道哪里不对。</td><td>可能表现为放松、紧缩、轻微抗拒、突然清醒或突然不想靠近。</td></tr>
+<tr><td>危险</td><td>过度用脑会覆盖直觉。</td><td>如果一直问别人意见、反复分析利弊，可能已经离开真正的直觉。</td></tr>
+<tr><td>练习方法</td><td>记录第一反应，再观察结果。</td><td>不要急着相信每一次恐惧，而是长期建立身体讯号数据库。</td></tr>
+<tr><td>与其他系统呼应</td><td>月水金天蝎六宫、心宿、红蛇都支持强直觉。</td><td>但直觉需要事实校准，不应直接等同证据。</td></tr>
+</tbody></table></div>
+</section>
+
+<div class="section-title" id="profile"><h2>五、1/3 人生角色</h2><span class="badge">Profile</span></div>
+<section class="card"><table><thead><tr><th>结构</th><th>说明</th><th>解读</th></tr></thead><tbody><tr><td>1 线</td><td>研究者、基础建立者、需要安全感。</td><td>必须先理解规则、资料、原理，才会觉得自己站得稳。</td></tr>
+<tr><td>3 线</td><td>试错者、实验者、现实碰撞者。</td><td>人生通过尝试、失败、修正来形成真正智慧。</td></tr>
+<tr><td>1/3 的组合</td><td>先研究，再试验；先建底，再碰撞。</td><td>不是完美主义路线，而是实验型专家路线。</td></tr>
+<tr><td>低阶状态</td><td>害怕不够懂，所以迟迟不开始；或试错后过度自责。</td><td>会在准备不足和害怕失败之间拉扯。</td></tr>
+<tr><td>高阶状态</td><td>把试错整理成方法，把失败变成别人可用的经验。</td><td>适合做复盘、报告、工具、案例库、咨询系统。</td></tr>
+</tbody></table></section>
+
+<div class="section-title"><h2>六、通道倾向</h2><span class="badge">Channels</span></div>
+<section class="grid two">
+  <div class="card"><h3>修正与技艺</h3><p>目前资料中提到 18-58、48-16 需要进一步精析。这里保留为倾向阅读：如果这些通道成立，它们会强化修正、优化、深度、技艺和表达能力。</p></div>
+  <div class="card"><table><thead><tr><th>通道</th><th>主题</th><th>解读</th></tr></thead><tbody><tr><td>18-58 修正轴</td><td>与发现问题、修正漏洞、提升生命质量有关。</td><td>若此通道成立，Howard 会本能地看见哪里不够好。高阶是优化系统，低阶是挑剔和不满。</td></tr>
+<tr><td>48-16 技艺轴</td><td>与深度、练习、表达技巧、专业化有关。</td><td>若此通道成立，适合把深度知识变成可展示的技能。</td></tr>
+<tr><td>与投射者关系</td><td>通道倾向若与投射者类型结合，会形成强诊断能力。</td><td>重点不是亲自做完所有事，而是看出系统应该怎样改。</td></tr>
+<tr><td>资料状态</td><td>通道需要清晰原图最终核对。</td><td>页面保留为倾向解读，实际使用时应以原始人类图为准。</td></tr>
+</tbody></table></div>
+</section>
+
+<div class="section-title" id="centers"><h2>七、九大中心框架</h2><span class="badge">Centers</span></div>
+<section class="grid two">
+  <div class="card">
+    <h3>中心阅读</h3>
+    <p>中心是否定义需要原始图核对。现阶段可以确认的是：权威落在脾中心逻辑中，且类型为投射者，因此不能用头脑和持续产能替代身体讯号。</p>
+    <div class="bodygraph">
+      <div class="center"><b>头脑</b><span>灵感压力</span></div>
+      <div class="center"><b>逻辑</b><span>解释与推理</span></div>
+      <div class="center"><b>喉咙</b><span>表达与显化</span></div>
+      <div class="center"><b>G 中心</b><span>身份与方向</span></div>
+      <div class="center"><b>意志</b><span>价值与承诺</span></div>
+      <div class="center"><b>情绪</b><span>情感波动</span></div>
+      <div class="center"><b>脾</b><span>直觉与安全</span></div>
+      <div class="center"><b>荐骨</b><span>持续生命力</span></div>
+      <div class="center"><b>根部</b><span>压力与推进</span></div>
+    </div>
+  </div>
+  <div class="card"><table><thead><tr><th>中心</th><th>状态</th><th>解读</th></tr></thead><tbody><tr><td>头脑中心</td><td>需以原图核对</td><td>若容易被灵感和问题压住，要避免把所有问题都当成自己的。</td></tr>
+<tr><td>逻辑中心</td><td>需以原图核对</td><td>思考不是权威，不能用脑内推演替代身体直觉。</td></tr>
+<tr><td>喉咙中心</td><td>需以原图核对</td><td>投射者表达要等待正确场合；被看见时一句话可以很有穿透力。</td></tr>
+<tr><td>G 中心</td><td>需以原图核对</td><td>身份方向若不稳定，环境选择会特别重要。</td></tr>
+<tr><td>意志中心</td><td>需以原图核对</td><td>不建议用证明价值、硬撑承诺来换认可。</td></tr>
+<tr><td>情绪中心</td><td>需以原图核对</td><td>若未定义，容易放大他人情绪；若定义，则需等待情绪清晰。当前资料以直觉权威为主。</td></tr>
+<tr><td>脾中心</td><td>Splenic 权威相关</td><td>身体当下的安全感是关键，不适合长期无视身体警讯。</td></tr>
+<tr><td>荐骨中心</td><td>投射者通常非荐骨类型</td><td>不适合用生产者模式持续燃烧自己。</td></tr>
+<tr><td>根部中心</td><td>需以原图核对</td><td>压力管理很重要，不能把紧迫感当成真正动力。</td></tr>
+</tbody></table></div>
+</section>
+
+<div class="section-title"><h2>八、日常运作策略</h2><span class="badge">Daily Operating System</span></div>
+<section class="card"><table><thead><tr><th>领域</th><th>策略</th><th>执行</th></tr></thead><tbody><tr><td>工作节奏</td><td>以深度块状时间取代全天候响应。</td><td>适合 90–120 分钟深度研究，再安排恢复。</td></tr>
+<tr><td>邀约筛选</td><td>先问：对方是否真正看见我的能力？</td><td>不清楚需求、不尊重专业、只想救火的邀请要谨慎。</td></tr>
+<tr><td>公开输出</td><td>稳定展示洞察，而不是追着别人解释自己。</td><td>文章、报告、案例分析、数据库、方法论都能提高被识别概率。</td></tr>
+<tr><td>身体管理</td><td>直觉权威必须照顾身体。</td><td>睡眠不足、过度训练、饮食混乱都会让直觉讯号失真。</td></tr>
+<tr><td>关系模式</td><td>不急着证明自己有用。</td><td>亲密关系里尤其要停止用服务换安全感。</td></tr>
+<tr><td>金钱策略</td><td>洞察要定价。</td><td>投射者若长期免费提供判断，会迅速苦涩。</td></tr>
+</tbody></table></section>
+
+<div class="section-title"><h2>九、跨系统交叉验证</h2><span class="badge">Crossover</span></div>
+<section class="card"><table><thead><tr><th>系统</th><th>对应</th><th>结论</th></tr></thead><tbody><tr><td>与西方占星</td><td>投射者等待邀请，对应命主星飞六宫与 MC 水瓶。</td><td>他要通过专业系统被看见，而不是靠情绪硬冲。</td></tr>
+<tr><td>与紫微斗数</td><td>命宫空借迁移，对应等待场域启动。</td><td>外界环境和正确人群会点亮自我。</td></tr>
+<tr><td>与生命灵数</td><td>1/3 与 25/7、13/4 呼应。</td><td>研究、试错、结构化，是同一条路。</td></tr>
+<tr><td>与八字</td><td>辛金建禄强调精密判断。</td><td>投射者的洞察若被辛金结构化，会成为高价值专业。</td></tr>
+<tr><td>与玛雅历</td><td>红蛇提醒身体本能。</td><td>Splenic 权威也要求相信身体第一讯号。</td></tr>
+<tr><td>与星宿</td><td>心宿暗流雷达对应直觉权威。</td><td>雷达强，但要避免把感应直接当事实。</td></tr>
+</tbody></table></section>
+
+<div class="section-title"><h2>十、2026 应用策略</h2><span class="badge">2026 Strategy</span></div>
+<section class="card"><table><thead><tr><th>领域</th><th>建议</th><th>执行重点</th></tr></thead><tbody><tr><td>身份定位</td><td>从执行者转向诊断者、整理者、系统设计者。</td><td>不要再用忙碌证明价值，而要让别人看见你的判断力。</td></tr>
+<tr><td>作品集</td><td>建立可展示的洞察成果。</td><td>报告模板、分析案例、方法论文章、系统页面都适合。</td></tr>
+<tr><td>合作</td><td>优先选择明确邀请与明确边界。</td><td>写清楚范围、报酬、时间和交付内容。</td></tr>
+<tr><td>副业</td><td>适合做深度分析、AI Prompt、命理报告、健康数据整理、策略咨询。</td><td>所有服务都要产品化，避免无止境解释和陪跑。</td></tr>
+<tr><td>关系</td><td>不要为了被爱而过度服务。</td><td>真正的邀请是看见你，而不是使用你。</td></tr>
+<tr><td>健康</td><td>身体稳定是直觉准确的前提。</td><td>睡眠、运动、饮食、恢复，比意志力更重要。</td></tr>
+</tbody></table></section>
+
+<div class="section-title" id="analysis"><h2>十一、人类图深度结论</h2><span class="badge">Long Synthesis</span></div>
+<section class="grid">
+
+  <article class="accordion open">
+    <button class="acc-btn"><span><span class="acc-title">1. 投射者的核心不是“少做事”，而是“做对位置的事”</span><span class="acc-sub">Human Design Synthesis 1</span></span><span class="acc-icon">＋</span></button>
+    <div class="acc-content"><p>Howard 的人类图类型是 Projector 投射者。很多人会把投射者误解成只能等待、不能行动，但真正的意思不是停止生活，而是不要用生产者的方式燃烧自己。投射者最擅长的不是持续产能，而是看见结构、看见别人系统里的漏洞、看见资源如何重新配置。对 Howard 来说，真正有价值的不是比别人更忙，而是比别人更准。只要他进入错误位置，就会觉得自己明明很努力，却没有被理解；一旦进入正确场域，他的几句话就可能改变整个系统的方向。</p></div>
+  </article>
+
+
+  <article class="accordion open">
+    <button class="acc-btn"><span><span class="acc-title">2. 等待邀请不是被动，而是先让自己变得可以被识别</span><span class="acc-sub">Human Design Synthesis 2</span></span><span class="acc-icon">＋</span></button>
+    <div class="acc-content"><p>“等待邀请”并不意味着坐着等机会掉下来。它更像是一种能量策略：先建立清晰的专业频率，让外界知道你是谁、你擅长什么、你能解决什么问题。Howard 需要公开展示洞察，例如深度文章、分析报告、方法论页面、案例复盘和工具化成果。这样，邀请不是靠讨好换来的，而是别人真正看见他的价值后发出的。错误的邀请往往只想让他救火、填坑或免费提供情绪劳动；正确的邀请则会尊重他的判断力，并愿意给出边界、资源和回报。</p></div>
+  </article>
+
+
+  <article class="accordion ">
+    <button class="acc-btn"><span><span class="acc-title">3. Splenic 直觉权威要求他相信身体，但不能把恐惧当成直觉</span><span class="acc-sub">Human Design Synthesis 3</span></span><span class="acc-icon">＋</span></button>
+    <div class="acc-content"><p>Howard 的内在权威是 Splenic 直觉权威，这意味着他做决定时，身体通常比大脑更快知道答案。真正的直觉很安静、很短暂、很当下；它不像恐惧那样反复播放，也不像焦虑那样越想越复杂。由于他的西方占星有月水金天蝎六宫、星宿有心宿，本来就具备强烈雷达，所以他必须学会区分：这是身体的安全讯号，还是过去经验触发的防卫？最好的练习不是盲目相信每个感觉，而是记录第一反应与后续结果，慢慢建立自己的身体讯号数据库。</p></div>
+  </article>
+
+
+  <article class="accordion ">
+    <button class="acc-btn"><span><span class="acc-title">4. 1/3 人生角色说明：他的智慧必须经过研究和试错</span><span class="acc-sub">Human Design Synthesis 4</span></span><span class="acc-icon">＋</span></button>
+    <div class="acc-content"><p>1/3 的组合非常适合 Howard。1 线需要研究、基础、资料、原理和安全感；3 线需要实验、碰撞、失败、修正和现实验证。这说明他不是靠空想成为专家的人，而是要把大量资料放进真实世界里测试。早期的失败并不是失败，而是在收集样本。只要他能把试错过程整理成报告、流程、指南或系统，他就会把原本让自己痛苦的经历变成别人可用的智慧。</p></div>
+  </article>
+
+
+  <article class="accordion ">
+    <button class="acc-btn"><span><span class="acc-title">5. 18-58 与 48-16 的倾向解释了他为什么总想修正和精进</span><span class="acc-sub">Human Design Synthesis 5</span></span><span class="acc-icon">＋</span></button>
+    <div class="acc-content"><p>现有资料里提到 18-58、48-16 需要进一步精析。若这些通道成立，它们会与修正、生命质量、深度、技艺和表达能力有关。18-58 会让他很容易看到哪里不够好，低阶时会变成挑剔和不满，高阶时则是优化系统的天赋。48-16 会让他需要通过练习把深度变成技能，不能只停留在懂很多，而要变成做得出来、讲得清楚、展示得出来。这与他的生命灵数 13/4、西方占星第 6 宫天蝎群星高度呼应。</p></div>
+  </article>
+
+
+  <article class="accordion ">
+    <button class="acc-btn"><span><span class="acc-title">6. 他的最大陷阱是把“被需要”误认为“被邀请”</span><span class="acc-sub">Human Design Synthesis 6</span></span><span class="acc-icon">＋</span></button>
+    <div class="acc-content"><p>投射者很容易被需要感吸引。别人遇到问题、情绪、混乱和漏洞时，Howard 会自然看见解决方法，也容易忍不住出手。但被需要不等于被邀请。被需要可能只是别人想使用他的能力，却不真正尊重他的边界；被邀请则是对方明确看见他的价值，并愿意给出位置、资源、回应和回报。若他不断响应错误需求，会越来越苦涩；若他学会筛选邀请，他的能量会变得清澈很多。</p></div>
+  </article>
+
+
+  <article class="accordion ">
+    <button class="acc-btn"><span><span class="acc-title">7. 最终人类图结论：先成为清晰的系统，再进入正确的关系</span><span class="acc-sub">Human Design Synthesis 7</span></span><span class="acc-icon">＋</span></button>
+    <div class="acc-content"><p>Howard 的人类图路径可以总结为：先研究，后试错；先被看见，后进入；先听身体，再用大脑整理。投射者不是来做世界的发动机，而是来做世界的导航系统。对他而言，成功不是更努力地证明自己，而是把洞察、判断、资料和经验整理成清晰系统，让正确的人自然识别他。真正适合他的未来，不是无止境执行，而是成为能判断方向、修正结构、设计方法的人。</p></div>
+  </article>
+
+</section>
+</main>
+<button class="float" id="topBtn">↑</button>
+</div>
+
+<script>
+const s2tMap = {"这":"這","个":"個","点":"點","觉":"覺","体":"體","关":"關","系":"係","统":"統","后":"後","资":"資","数":"數","据":"據","库":"庫","宫":"宮","与":"與","万":"萬","专":"專","业":"業","现":"現","简":"簡","开":"開","门":"門","档":"檔","画":"畫","过":"過","运":"運","动":"動","灵":"靈","历":"曆","玛":"瑪","亚":"亞","红":"紅","龙":"龍","风":"風","险":"險","错":"錯","认":"認","为":"為","无":"無","压":"壓","绪":"緒","气":"氣","断":"斷","结":"結","构":"構","权":"權","钱":"錢","财":"財","务":"務","声":"聲","应":"應","该":"該","类":"類","选":"選","择":"擇","题":"題","问":"問","输":"輸","复":"複","制":"製","时":"時","间":"間","郑":"鄭","岁":"歲","阴":"陰","阳":"陽","贵":"貴","独":"獨","双":"雙","长":"長","学":"學","习":"習","疗":"療","愈":"癒","职":"職","场":"場","稳":"穩","爱":"愛","实":"實","验":"驗","浅":"淺","蝎":"蠍","处":"處","狮":"獅","献":"獻","责":"責","备":"備","识":"識","创":"創","见":"見","触":"觸","发":"發","冲":"衝","击":"擊","读":"讀","观":"觀","内":"內","层":"層","测":"測","试":"試","逻":"邏","辑":"輯","标":"標","签":"籤","语":"語","条":"條","辅":"輔","轴":"軸","态":"態","强":"強","异":"異","轻":"輕","艺":"藝","医":"醫","顾":"顧","师":"師","从":"從","来":"來","写":"寫","听":"聽","说":"說","里":"裡","线":"線","阶":"階","级":"級","迁":"遷","变":"變","总":"總","怀":"懷","价":"價","质":"質","极":"極","给":"給","带":"帶","还":"還","显":"顯","隐":"隱","让":"讓","样":"樣","张":"張","战":"戰","争":"爭","飞":"飛","禄":"祿","盘":"盤","补":"補","护":"護","闭":"閉","启":"啟","须":"須","则":"則","众":"眾","炼":"煉","涌":"湧","欲":"慾","仓":"倉"};
+function toTraditional(str){return str.split("").map(ch=>s2tMap[ch]||ch).join("")}
+let traditional=localStorage.getItem("soul_lang")==="trad";let originalText=new WeakMap();
+function convertPage(){const walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT,{acceptNode(node){if(!node.nodeValue.trim())return NodeFilter.FILTER_REJECT;if(node.parentElement&&["SCRIPT","STYLE"].includes(node.parentElement.tagName))return NodeFilter.FILTER_REJECT;return NodeFilter.FILTER_ACCEPT;}});const nodes=[];while(walker.nextNode())nodes.push(walker.currentNode);nodes.forEach(node=>{if(!originalText.has(node))originalText.set(node,node.nodeValue);node.nodeValue=traditional?toTraditional(originalText.get(node)):originalText.get(node);});document.getElementById("langBtn").textContent=traditional?"繁":"简";}
+document.querySelectorAll(".acc-btn").forEach(btn=>btn.onclick=()=>btn.closest(".accordion").classList.toggle("open"));
+document.getElementById("themeBtn").onclick=()=>{const isDark=document.documentElement.classList.toggle("dark");localStorage.setItem("soul_theme",isDark?"dark":"light");document.getElementById("themeBtn").textContent=isDark?(traditional?"天蠍黑":"天蝎黑"):(traditional?"辛金銀":"辛金银");};
+document.getElementById("langBtn").onclick=()=>{traditional=!traditional;localStorage.setItem("soul_lang",traditional?"trad":"simp");convertPage();};
+document.getElementById("topBtn").onclick=()=>scrollTo({top:0,behavior:"smooth"});
+document.getElementById("openDrawer").onclick=()=>document.getElementById("drawer").classList.add("open");
+document.getElementById("closeDrawer").onclick=()=>document.getElementById("drawer").classList.remove("open");
+document.getElementById("drawer").onclick=e=>{if(e.target.id==="drawer")document.getElementById("drawer").classList.remove("open");};
+if((localStorage.getItem("soul_theme")||"dark")==="dark")document.documentElement.classList.add("dark");else document.documentElement.classList.remove("dark");
+convertPage();
+</script>
+</body>
+</html>
