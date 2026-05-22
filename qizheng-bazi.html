@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="zh-Hans" class="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Soul OS｜七政四余・子平八字</title>
+<style>
+:root{--bg1:#edf1f4;--bg2:#cad7df;--ink:#12202e;--muted:#546473;--glass:rgba(255,255,255,.58);--glass2:rgba(255,255,255,.31);--line:rgba(255,255,255,.56);--accent:#b7b7c8;--gold:#c7a76a;--shadow:0 26px 90px rgba(26,43,58,.16)}
+html.dark{--bg1:#03050b;--bg2:#111b2b;--ink:#f7f9fc;--muted:#b4bfca;--glass:rgba(12,19,31,.66);--glass2:rgba(255,255,255,.075);--line:rgba(255,255,255,.14);--accent:#e4e8ef;--gold:#f1d08a;--shadow:0 28px 90px rgba(0,0,0,.46)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans SC","Noto Sans TC","PingFang SC","Microsoft YaHei",Arial,sans-serif;background:radial-gradient(circle at 12% 6%,rgba(255,255,255,.75),transparent 25%),radial-gradient(circle at 82% 10%,rgba(190,190,210,.30),transparent 28%),radial-gradient(circle at 52% 95%,rgba(205,170,95,.18),transparent 25%),linear-gradient(135deg,var(--bg1),var(--bg2));min-height:100vh;transition:.35s}html.dark body{background:radial-gradient(circle at 12% 6%,rgba(160,160,190,.16),transparent 25%),radial-gradient(circle at 82% 10%,rgba(190,170,110,.14),transparent 28%),radial-gradient(circle at 52% 95%,rgba(100,130,170,.13),transparent 25%),linear-gradient(135deg,var(--bg1),var(--bg2))}body:before{content:"";position:fixed;inset:10px;border-radius:34px;pointer-events:none;box-shadow:inset 0 0 34px rgba(235,244,248,.36);animation:pulse 5s infinite;z-index:0}@keyframes pulse{50%{box-shadow:inset 0 0 78px rgba(235,244,248,.62)}}a{color:inherit;text-decoration:none}.page{position:relative;z-index:1}.topbar{position:sticky;top:14px;z-index:50;width:min(1320px,calc(100% - 28px));margin:14px auto 0;border:1px solid var(--line);background:var(--glass);backdrop-filter:blur(24px);border-radius:999px;box-shadow:var(--shadow)}.topinner{display:flex;align-items:center;gap:12px;padding:12px 14px}.logo{font-weight:950;letter-spacing:.22em;white-space:nowrap;padding:10px 14px}.nav{display:flex;gap:4px;align-items:center;justify-content:center;flex:1}.nav a{font-size:12px;padding:9px 10px;border-radius:999px;color:var(--muted)}.nav a:hover,.nav a.active{background:var(--glass2);color:var(--ink)}.btn,.pill{border:1px solid var(--line);background:var(--glass2);color:var(--ink);border-radius:999px;padding:10px 14px;font-weight:850;cursor:pointer}.mobile{display:none}.drawer{display:none;position:fixed;inset:0;background:rgba(0,0,0,.50);z-index:80}.drawer.open{display:block}.drawer-panel{height:100%;width:min(86vw,390px);overflow:auto;background:rgba(7,12,22,.92);backdrop-filter:blur(24px);color:white;padding:22px}.drawer-panel a{display:block;border:1px solid rgba(255,255,255,.12);border-radius:18px;margin:8px 0;padding:14px 16px}.container{width:min(1280px,calc(100% - 32px));margin:0 auto;padding:56px 0 96px}.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:22px;margin-bottom:22px}.glass,.card{border:1px solid var(--line);background:var(--glass);backdrop-filter:blur(24px);box-shadow:var(--shadow);border-radius:34px;padding:30px}.kicker{font-size:12px;letter-spacing:.42em;text-transform:uppercase;color:var(--gold);font-weight:950}h1{font-size:clamp(46px,7vw,94px);line-height:.9;margin:18px 0;font-weight:950;letter-spacing:-.06em}h2{font-size:clamp(28px,4vw,50px);line-height:1.05;margin:0 0 18px;font-weight:950;letter-spacing:-.04em}h3{font-size:22px;margin:0 0 12px}p{color:var(--muted);line-height:1.9}.lead{font-size:18px;color:var(--muted)}.chips,.mini-nav{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}.chip,.mini-nav a{border:1px solid var(--line);background:var(--glass2);border-radius:999px;padding:9px 13px;font-weight:850;font-size:13px}.section-title{display:flex;align-items:end;justify-content:space-between;gap:16px;margin:38px 0 16px}.badge{font-size:12px;border:1px solid var(--line);border-radius:999px;padding:7px 10px;color:var(--gold);font-weight:900;white-space:nowrap}.grid{display:grid;gap:18px}.two{grid-template-columns:1fr 1fr}.three{grid-template-columns:repeat(3,1fr)}.bento{display:grid;grid-template-columns:repeat(12,1fr);gap:18px}.span4{grid-column:span 4}.span6{grid-column:span 6}.span8{grid-column:span 8}.span12{grid-column:span 12}.callout{border-left:4px solid var(--gold);padding:16px 18px;background:var(--glass2);border-radius:20px;color:var(--muted);line-height:1.85}table{width:100%;border-collapse:separate;border-spacing:0;overflow:hidden;border-radius:24px;border:1px solid var(--line);background:var(--glass2)}th,td{padding:14px 15px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line);line-height:1.65}th{font-size:12px;letter-spacing:.15em;text-transform:uppercase;color:var(--gold)}tr:last-child td{border-bottom:0}td{color:var(--muted)}td:first-child{color:var(--ink);font-weight:850}.pillar-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.pillar{border:1px solid var(--line);border-radius:24px;background:var(--glass2);padding:18px;text-align:center}.pillar .stem{font-size:34px;font-weight:950;color:var(--gold)}.pillar p{font-size:13px;line-height:1.65;margin:10px 0 0}.accordion{overflow:hidden;border:1px solid var(--line);background:var(--glass);backdrop-filter:blur(20px);border-radius:28px}.acc-btn{width:100%;border:0;background:transparent;color:var(--ink);padding:20px 22px;text-align:left;display:flex;justify-content:space-between;gap:14px;cursor:pointer}.acc-title{font-size:20px;font-weight:950}.acc-sub{font-size:13px;color:var(--muted);margin-top:4px}.acc-icon{width:34px;height:34px;display:grid;place-items:center;border:1px solid var(--line);border-radius:50%;flex:none;transition:.3s}.accordion.open .acc-icon{transform:rotate(45deg)}.acc-content{display:none;padding:0 22px 22px}.accordion.open .acc-content{display:block}.float{position:fixed;right:18px;bottom:18px;z-index:70;width:54px;height:54px;border-radius:50%;border:1px solid var(--line);background:var(--glass);backdrop-filter:blur(20px);color:var(--ink);font-size:22px;box-shadow:var(--shadow);cursor:pointer}@media(max-width:1180px){.nav{display:none}.mobile{display:inline-flex}.hero,.two,.three{grid-template-columns:1fr}.bento{grid-template-columns:1fr}.span4,.span6,.span8,.span12{grid-column:span 1}.topbar{border-radius:28px}.pillar-grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:720px){body:before{inset:4px;border-radius:24px}.container{width:min(100% - 22px,680px);padding-top:26px}.glass,.card{padding:22px;border-radius:28px}.topinner{justify-content:space-between}.logo{letter-spacing:.14em}h1{font-size:46px}.lead{font-size:15px}th,td{display:block;width:100%}th{display:none}td{border-bottom:0;padding:8px 14px}tr{display:block;border-bottom:1px solid var(--line);padding:8px 0}tr:last-child{border-bottom:0}.pillar-grid{grid-template-columns:1fr 1fr}}
+</style>
+</head>
+<body>
+<div class="page">
+<header class="topbar"><div class="topinner"><button class="btn mobile" id="openDrawer">☰</button><a class="logo" href="home.html">SOUL OS</a><nav class="nav"><a href="home.html">整合大厅</a><a href="astrology.html">占星矩阵</a><a href="ziwei.html">紫微斗数</a><a href="numerology.html">生命灵数</a><a href="humandesign.html">人类图</a><a href="maya.html">玛雅历</a><a href="mansions.html">二十八星宿</a><a class="active" href="qizheng-bazi.html">七政八字</a><a href="crossover.html">交叉比对</a><a href="undertow.html">暗流涌动</a><a href="peak.html">欲望巅峰</a><a href="strategy.html">2026</a><a href="defense.html">防御</a><a href="refinement.html">炼金</a><a href="nucleus.html">Nucleus</a></nav><button class="btn" id="langBtn">简</button><button class="btn" id="themeBtn">天蝎黑</button></div></header>
+<div class="drawer" id="drawer"><div class="drawer-panel"><button class="btn" id="closeDrawer">× 关闭</button><a href="home.html">整合大厅</a><a href="astrology.html">占星矩阵</a><a href="ziwei.html">紫微斗数</a><a href="numerology.html">生命灵数</a><a href="humandesign.html">人类图</a><a href="maya.html">玛雅历</a><a href="mansions.html">二十八星宿</a><a href="qizheng-bazi.html">七政八字</a><a href="crossover.html">交叉比对</a><a href="undertow.html">暗流涌动</a><a href="peak.html">欲望巅峰</a><a href="strategy.html">2026</a><a href="defense.html">防御</a><a href="refinement.html">炼金实验室</a><a href="nucleus.html">全数据仓库</a></div></div>
+
+<main class="container">
+<section class="hero">
+  <div class="glass">
+    <div class="kicker">Seven Stars & Bazi / Revamped</div>
+    <h1>七政四余<br>子平八字</h1>
+    <p class="lead">命度主金、身度主金，八字辛金建禄。整套结构指向精密、审美、判断、边界与高标准；真正的课题，是让锋利变成专业，而不是变成内耗。</p>
+    <div class="chips"><span class="chip">命身双金</span><span class="chip">辛金日主</span><span class="chip">酉月建禄</span><span class="chip">卯酉冲</span><span class="chip">戊子大运</span><span class="chip">2026 丙午</span></div>
+  </div>
+  <div class="glass">
+    <h3>阅读方法</h3>
+    <p>七政四余看命度、身度、星曜与身体感受；子平八字看四柱、日主、月令、格局、十神、五行、冲合刑害与大运流年。两者合读时，先确认生命底色，再看现实运作方式。</p>
+    <div class="mini-nav"><a href="#core">核心</a><a href="#qizheng">七政</a><a href="#bazi">八字</a><a href="#elements">五行</a><a href="#luck">大运</a><a href="#analysis">结论</a></div>
+  </div>
+</section>
+
+<section class="bento">
+  <div class="card span4"><div class="kicker">Metal</div><h3>命身双金</h3><p>七政四余与八字同时强调金：判断、标准、切割、审美和边界是核心语言。</p></div>
+  <div class="card span4"><div class="kicker">Bazi</div><h3>辛金建禄</h3><p>不是软弱之金，而是有根之金。越高标准，越需要水的流动和火的锻造。</p></div>
+  <div class="card span4"><div class="kicker">Clash</div><h3>卯酉相冲</h3><p>关系、财、价值感与自我标准反复碰撞，是八字最重要的冲突结构。</p></div>
+</section>
+
+<div class="section-title" id="core"><h2>一、核心资料</h2><span class="badge">Core Data</span></div>
+<section class="grid two">
+  <div class="card"><h3>整体结构</h3><p>Howard 的七政与八字都把“金”推到中心。命身双金给出精密判断，辛金建禄给出强根与标准，卯酉冲则把关系、财、价值与安全感拉进冲突场。最重要的不是削弱金，而是让金有水、有火、有容器。</p><div class="callout">一句话：金要有水，刀要有鞘，火要有炉。</div></div>
+  <div class="card"><table><thead><tr><th>项目</th><th>资料</th><th>解读</th></tr></thead><tbody><tr><td>出生资料</td><td>2000 年 9 月 30 日 20:22，北京时间，河南郑州；真太阳时约 20:06。</td><td>七政与八字都需要时间与地点校准，时辰落在戌时。</td></tr>
+<tr><td>农历资料</td><td>庚辰年九月初三，戌时。</td><td>八字四柱以干支结构为核心，七政则补充命度、身度与星曜象征。</td></tr>
+<tr><td>七政四余</td><td>命度主金，身度主金；月坐雷门卯宫。</td><td>命身双金强化精密、判断、审美、切割、标准与边界。</td></tr>
+<tr><td>八字四柱</td><td>庚辰年、乙酉月、辛卯日、戊戌时。</td><td>日主为辛金，生于酉月。</td></tr>
+<tr><td>日主</td><td>辛金</td><td>珠宝之金，精密、锋利、重标准、重质感，也容易过度挑剔。</td></tr>
+<tr><td>格局</td><td>酉月建禄，身旺。</td><td>日主有根，金气强，需要流通、温度与输出。</td></tr>
+<tr><td>核心冲突</td><td>卯酉相冲</td><td>日支卯与月支酉相冲，牵动亲密关系、价值观、财、根基与内在安全。</td></tr>
+<tr><td>现行大运</td><td>戊子大运，24 至 33 岁。</td><td>正印与食神并行，学习、资格、系统重建、输出与生活节奏调整成为主轴。</td></tr>
+</tbody></table></div>
+</section>
+
+<div class="section-title" id="qizheng"><h2>二、七政四余结构</h2><span class="badge">Seven Stars</span></div>
+<section class="grid two">
+  <div class="card"><h3>命身双金</h3><p>命度主金、身度主金，说明 Howard 的生命质感和现实执行方式都带有金的属性。金的能力是判断、切割、审美和定标准；金的阴影是太冷、太硬、太难放松。</p><div class="pillar-grid">
+    <div class="pillar"><div class="stem">命</div><p>命度主金</p></div>
+    <div class="pillar"><div class="stem">身</div><p>身度主金</p></div>
+    <div class="pillar"><div class="stem">月</div><p>雷门卯宫</p></div>
+    <div class="pillar"><div class="stem">金</div><p>精密切割</p></div>
+  </div></div>
+  <div class="card"><table><thead><tr><th>层次</th><th>说明</th><th>解读</th></tr></thead><tbody><tr><td>命度主金</td><td>命度主象征生命底色与外在运作方式。</td><td>金主精密、审美、判断、切割、界线、标准与取舍。</td></tr>
+<tr><td>身度主金</td><td>身度主象征身体承载与现实执行方式。</td><td>命身双金让判断力与边界感更强，但也容易把自己活成一把刀。</td></tr>
+<tr><td>月坐雷门卯宫</td><td>月亮位置牵动情绪、感受、反应与身体节律。</td><td>雷门带有警觉、刺激、突发感；卯宫又与八字辛卯日、卯酉冲形成呼应。</td></tr>
+<tr><td>金的高阶</td><td>精准、专业、审美、规则、结构、清晰界线。</td><td>适合做分析、审查、整理、判断、策略、风格和高标准服务。</td></tr>
+<tr><td>金的低阶</td><td>挑剔、冷感、过度切割、难放松、对瑕疵过度敏感。</td><td>若缺乏火与水的调和，会变成只会批判而难以流动。</td></tr>
+<tr><td>七政与八字交汇</td><td>命身双金对应八字辛金建禄。</td><td>两套系统都强调：Howard 的核心不是模糊感性，而是精密判断和高标准。</td></tr>
+</tbody></table></div>
+</section>
+
+<div class="section-title" id="bazi"><h2>三、八字四柱与日主</h2><span class="badge">Four Pillars</span></div>
+<section class="grid two">
+  <div class="card"><h3>四柱结构</h3><p>辛金日主生于酉月，月令当令，属于身旺建禄。年柱庚辰、月柱乙酉、日柱辛卯、时柱戊戌，形成金土偏重、木被冲、水火需补的结构。</p><div class="pillar-grid">
+    <div class="pillar"><div class="stem">庚辰</div><p>年柱</p></div>
+    <div class="pillar"><div class="stem">乙酉</div><p>月柱</p></div>
+    <div class="pillar"><div class="stem">辛卯</div><p>日柱</p></div>
+    <div class="pillar"><div class="stem">戊戌</div><p>时柱</p></div>
+  </div></div>
+  <div class="card"><table><thead><tr><th>柱位</th><th>资料</th><th>解读</th></tr></thead><tbody><tr><td>年柱</td><td>庚辰</td><td>外部背景带金土之气；辰为湿土，藏乙、戊、癸，带资源、根基与复杂底层。</td></tr>
+<tr><td>月柱</td><td>乙酉</td><td>月令酉金当令，乙木透出；金木相见，形成价值、关系与标准之间的拉扯。</td></tr>
+<tr><td>日柱</td><td>辛卯</td><td>辛金日主坐卯木，配偶宫与自我核心直接受卯木牵动。</td></tr>
+<tr><td>时柱</td><td>戊戌</td><td>戊土透出，戌为燥土含辛丁戊；晚年、执行、内在结构与压力感较重。</td></tr>
+<tr><td>日主状态</td><td>辛金生于酉月，建禄身旺。</td><td>自我标准强、抗压强、判断强，但需要避免过度僵硬。</td></tr>
+<tr><td>关键结构</td><td>卯酉冲</td><td>月支酉冲日支卯，关系、财星、价值感与现实标准相互碰撞。</td></tr>
+</tbody></table></div>
+</section>
+
+<div class="section-title"><h2>四、十神结构</h2><span class="badge">Ten Gods</span></div>
+<section class="card"><table><thead><tr><th>元素 / 干支</th><th>十神倾向</th><th>解读</th></tr></thead><tbody><tr><td>庚金</td><td>劫财</td><td>同类竞争、自我坚持、资源争夺、强硬气质。</td></tr>
+<tr><td>乙木</td><td>偏财</td><td>欲望、资源、现实机会、人际交换；对辛金而言木为财。</td></tr>
+<tr><td>戊土</td><td>正印</td><td>学习、保护、资格、系统、内在安全感，也可能带来依赖与过度思考。</td></tr>
+<tr><td>酉金</td><td>比肩 / 建禄</td><td>自我根气强，标准强，不轻易被他人改变。</td></tr>
+<tr><td>卯木</td><td>偏财坐夫妻宫</td><td>亲密关系、资源欲望与现实价值直接进入核心人生。</td></tr>
+<tr><td>辰土</td><td>印库兼湿土</td><td>内在有存储、整理、保护与复杂底盘。</td></tr>
+<tr><td>戌土</td><td>印星与燥土</td><td>结构、压力、责任、规则与硬撑感。</td></tr>
+<tr><td>丁火藏于戌</td><td>七杀 / 火气微藏</td><td>行动压力与外部挑战存在，但火不显，需要主动建立火的出口。</td></tr>
+</tbody></table></section>
+
+<div class="section-title" id="elements"><h2>五、五行强弱与调候</h2><span class="badge">Elements</span></div>
+<section class="card"><table><thead><tr><th>五行</th><th>状态</th><th>解读</th></tr></thead><tbody><tr><td>金</td><td>最强</td><td>辛金日主、酉月建禄、庚金透出，金气非常明显。</td></tr>
+<tr><td>土</td><td>偏强</td><td>辰、戌、戊土形成印星支持，也带来保护、学习、压力与内耗。</td></tr>
+<tr><td>木</td><td>明显但受冲</td><td>乙木透出、卯木坐日支，但被酉金冲，财星与关系不稳定。</td></tr>
+<tr><td>水</td><td>藏于辰</td><td>水不算显，需要通过学习、表达、流动、休息来补足。</td></tr>
+<tr><td>火</td><td>偏弱，藏于戌</td><td>火不显，行动力、热度、外放冲劲需要后天建立。</td></tr>
+<tr><td>综合判断</td><td>金土重，木被冲，水火需要调候与流通。</td><td>人生不是缺能力，而是需要让锋利流动、让冷金有温度。</td></tr>
+</tbody></table></section>
+
+<div class="section-title"><h2>六、冲合刑害</h2><span class="badge">Clash & Combination</span></div>
+<section class="card"><table><thead><tr><th>结构</th><th>资料</th><th>解读</th></tr></thead><tbody><tr><td>卯酉冲</td><td>日支卯与月支酉相冲。</td><td>最关键结构，牵动亲密关系、价值观、财、根基和自我安全感。</td></tr>
+<tr><td>辰戌冲</td><td>年支辰与时支戌相冲。</td><td>湿土与燥土冲，根基、家庭背景、长期责任与内在压力容易有拉扯。</td></tr>
+<tr><td>乙庚合</td><td>乙木与庚金有合象。</td><td>财星与劫财相合，资源、人际、合作与竞争关系复杂。</td></tr>
+<tr><td>丙辛合</td><td>2026 丙午流年出现丙辛合。</td><td>外部火气合住日主，带来可见度、关系、事业身份与压力。</td></tr>
+<tr><td>子午冲</td><td>戊子大运遇 2026 丙午流年。</td><td>大运子与流年午冲，节奏、情绪、方向与身体状态容易被冲动触发。</td></tr>
+<tr><td>子卯刑</td><td>大运子与日支卯形成刑象。</td><td>关系与情绪安全感被刺激，容易因想太多或情绪不稳影响判断。</td></tr>
+</tbody></table></section>
+
+<div class="section-title"><h2>七、神煞辅助</h2><span class="badge">Auxiliary Stars</span></div>
+<section class="card"><table><thead><tr><th>神煞</th><th>说明</th><th>转化</th></tr></thead><tbody><tr><td>月德贵人</td><td>有化解、缓冲、柔性贵人之象。</td><td>遇到压力时，仍有机会通过贵人、制度、学习或善意支援化解。</td></tr>
+<tr><td>桃花</td><td>吸引力、人际魅力、审美与关系机会。</td><td>也容易带来感情扰动或被关注后的压力。</td></tr>
+<tr><td>红艳</td><td>情感吸引、强烈关系体验、魅力与欲望。</td><td>需避免把强烈吸引误判为长期稳定。</td></tr>
+<tr><td>童子</td><td>孤独感、与俗世节奏不完全贴合。</td><td>容易有精神世界强、现实关系难完全落地的感受。</td></tr>
+<tr><td>阴差阳错</td><td>关系、婚恋或时机容易出现错位感。</td><td>需要清楚沟通与稳定节奏，不宜只靠感觉推进关系。</td></tr>
+</tbody></table></section>
+
+<div class="section-title" id="luck"><h2>八、戊子大运</h2><span class="badge">Current Luck Cycle</span></div>
+<section class="grid two">
+  <div class="card"><h3>大运主线</h3><p>戊子大运不是单纯向外冲刺的运，而是学习、整理、建立系统、输出内容和重建生活节奏的十年。正印提供框架，食神提供表达；两者必须同时运行。</p></div>
+  <div class="card"><table><thead><tr><th>项目</th><th>资料</th><th>解读</th></tr></thead><tbody><tr><td>戊子大运</td><td>24 至 33 岁。</td><td>戊为正印，子为食神之地，主学习、系统、输出、身心节奏调整。</td></tr>
+<tr><td>正印主题</td><td>资格、知识、保护、体系、内在安全。</td><td>适合读书、拿证、建立专业框架、整理资料库。</td></tr>
+<tr><td>食神主题</td><td>输出、表达、作品、生活感、身体节奏。</td><td>适合把研究变成内容、报告、服务和产品。</td></tr>
+<tr><td>印与食神并行</td><td>既要吸收，也要输出。</td><td>只学不发会堵住；只发不学会空心。</td></tr>
+<tr><td>大运风险</td><td>过度思考、依赖安全感、节奏混乱。</td><td>需要固定作息、固定输出、固定复盘。</td></tr>
+<tr><td>大运机会</td><td>建立长期专业系统。</td><td>这十年适合把命理、数据、策略、健康管理、内容系统化。</td></tr>
+</tbody></table></div>
+</section>
+
+<div class="section-title"><h2>九、2026 丙午流年</h2><span class="badge">2026</span></div>
+<section class="card"><table><thead><tr><th>流年项目</th><th>资料</th><th>解读</th></tr></thead><tbody><tr><td>2026 丙午</td><td>丙火透出，午火当令。</td><td>火气带来可见度、事业压力、行动力和外部挑战。</td></tr>
+<tr><td>丙辛合</td><td>流年丙火合日主辛金。</td><td>容易出现外部机会、关系牵引、身份曝光，也可能被某个目标合住。</td></tr>
+<tr><td>子午冲</td><td>大运子与流年午冲。</td><td>情绪、身体、节奏、方向容易被冲动改变；交通、出行、关系冲突需谨慎。</td></tr>
+<tr><td>子卯刑</td><td>大运子与日支卯形成刑。</td><td>亲密关系、情绪安全、价值感被刺激，容易因猜测或焦虑放大问题。</td></tr>
+<tr><td>火的作用</td><td>火可炼金，也可灼金。</td><td>适量压力能让辛金成器；过度火气会带来急躁、冲突与身体消耗。</td></tr>
+<tr><td>年度策略</td><td>用计划承接机会，用规则管理冲动。</td><td>2026 不宜只凭情绪做重大决定，所有合作、感情、金钱承诺要文字化。</td></tr>
+</tbody></table></section>
+
+<div class="section-title"><h2>十、身体与健康调和</h2><span class="badge">Body Strategy</span></div>
+<section class="card"><table><thead><tr><th>层面</th><th>说明</th><th>行动</th></tr></thead><tbody><tr><td>金土偏重</td><td>身体容易呈现紧、硬、干、压抑、循环不畅的象征。</td><td>需要流动性训练、伸展、规律饮水和呼吸放松。</td></tr>
+<tr><td>火弱需补</td><td>行动力和热度需要后天建立。</td><td>运动、晒太阳、力量训练、阶段性挑战可作为火的出口。</td></tr>
+<tr><td>水需流通</td><td>水代表流动、休息、表达、情绪疏导。</td><td>睡眠、步行、写作、倾诉、冥想能降低金木冲的压力。</td></tr>
+<tr><td>木被冲</td><td>财星与关系议题容易牵动身体。</td><td>感情和金钱压力不宜一直压在体内，要通过计划和沟通释放。</td></tr>
+<tr><td>土重风险</td><td>想太多、背负感、消化压力、责任感过重。</td><td>不要把所有问题都用脑和忍耐解决。</td></tr>
+<tr><td>调和原则</td><td>水润金，火炼金，木有生机，土不埋金。</td><td>身体管理的目标不是控制身体，而是让系统重新流通。</td></tr>
+</tbody></table></section>
+
+<div class="section-title"><h2>十一、事业与财务应用</h2><span class="badge">Career & Money</span></div>
+<section class="card"><table><thead><tr><th>领域</th><th>说明</th><th>应用</th></tr></thead><tbody><tr><td>适合方向</td><td>分析、审查、策略、金融、保险、命理资料、AI 工具、健康数据、内容系统。</td><td>辛金与命身双金适合精密判断与高标准服务。</td></tr>
+<tr><td>工作优势</td><td>标准感、审美、结构、识别漏洞、风险判断。</td><td>适合做别人不愿意细看的复杂系统。</td></tr>
+<tr><td>工作风险</td><td>过度挑剔、过度防备、难以接受粗糙流程。</td><td>需要学会先完成，再优化。</td></tr>
+<tr><td>副业方向</td><td>报告模板、命理分析、资料库、健康追踪、咨询服务、AI Prompt 工作流。</td><td>把辛金判断和戊子大运的学习输出结合。</td></tr>
+<tr><td>财务策略</td><td>偏财透出但受冲，收入机会有，但需制度承接。</td><td>预算、定价、合约、储蓄和风险分散非常重要。</td></tr>
+<tr><td>长期定位</td><td>高标准系统设计者。</td><td>不是靠情绪救火，而是靠结构、判断和规则创造价值。</td></tr>
+</tbody></table></section>
+
+<div class="section-title"><h2>十二、亲密关系结构</h2><span class="badge">Relationship</span></div>
+<section class="card"><table><thead><tr><th>主题</th><th>资料</th><th>成熟方向</th></tr></thead><tbody><tr><td>夫妻宫</td><td>日支卯木坐夫妻宫，被月支酉金冲。</td><td>关系是人生高敏感区域，既吸引资源与欲望，也触发标准与防御。</td></tr>
+<tr><td>财星入核心</td><td>木为财，卯木在日支。</td><td>伴侣、钱、价值感与现实生活会强烈交织。</td></tr>
+<tr><td>卯酉冲的表现</td><td>关系中容易出现吸引与挑剔、靠近与切割、柔软与标准对冲。</td><td>越在乎越容易用标准审查对方。</td></tr>
+<tr><td>红艳桃花</td><td>有吸引力与强烈关系体验。</td><td>不宜把热烈当稳定，也不宜把痛感当命定。</td></tr>
+<tr><td>阴差阳错</td><td>关系时机、表达和期待可能错位。</td><td>需要提前沟通，不要让对方猜。</td></tr>
+<tr><td>成熟关系</td><td>清楚边界、财务透明、承诺可执行。</td><td>关系不是凭强烈感维持，而是靠稳定行动累积信任。</td></tr>
+</tbody></table></section>
+
+<div class="section-title"><h2>十三、跨系统交叉验证</h2><span class="badge">Crossover</span></div>
+<section class="card"><table><thead><tr><th>系统</th><th>对应</th><th>结论</th></tr></thead><tbody><tr><td>与西方占星</td><td>辛金建禄与土星一宫、天蠍六宫形成呼应。</td><td>标准高、压力大、精密判断与日常焦虑互相强化。</td></tr>
+<tr><td>与紫微斗数</td><td>身宫财帛与八字偏财、卯酉冲呼应。</td><td>人生重心确实落在资源、价值、关系与变现。</td></tr>
+<tr><td>与生命灵数</td><td>13/4 与辛金建禄都强调结构和工程化。</td><td>洞察需要系统承接。</td></tr>
+<tr><td>与人类图</td><td>投射者 1/3 与戊子大运的学习输出相合。</td><td>先研究，后试错，再形成可被邀请的专业。</td></tr>
+<tr><td>与玛雅历</td><td>红蛇补火，八字火弱需要生命力出口。</td><td>身体行动是命局调和的重要方式。</td></tr>
+<tr><td>与星宿</td><td>心宿毒害与辛金锋利呼应。</td><td>判断力很强，但需要避免语言与情绪过度切割。</td></tr>
+</tbody></table></section>
+
+<div class="section-title"><h2>十四、日常练习</h2><span class="badge">Practice</span></div>
+<section class="card"><table><thead><tr><th>练习</th><th>方法</th><th>目的</th></tr></thead><tbody><tr><td>辛金打磨</td><td>每天完成一个小而精的输出。</td><td>让锋利变成作品，而不是内耗。</td></tr>
+<tr><td>水的流动</td><td>每天记录情绪、事实、行动三栏。</td><td>避免金木冲时把情绪卡死。</td></tr>
+<tr><td>火的炉灶</td><td>每周固定运动 3 次。</td><td>用身体热度启动行动力，降低压抑感。</td></tr>
+<tr><td>木的生机</td><td>每月尝试一个新合作或新资源入口。</td><td>让财星有生长空间，不被标准直接砍掉。</td></tr>
+<tr><td>土的减压</td><td>每周清理责任清单，删除不属于自己的责任。</td><td>避免印星过重变成负担。</td></tr>
+<tr><td>冲刑管理</td><td>重大关系和金钱决定延迟 24 小时。</td><td>让卯酉冲、子午冲不直接变成冲动行动。</td></tr>
+</tbody></table></section>
+
+<div class="section-title"><h2>十五、现实策略</h2><span class="badge">Strategy</span></div>
+<section class="card"><table><thead><tr><th>领域</th><th>建议</th><th>执行重点</th></tr></thead><tbody><tr><td>工作</td><td>用高标准做系统，不要只做救火。</td><td>选择能体现判断力、分析力、结构力的工作。</td></tr>
+<tr><td>金钱</td><td>偏财有机会，但必须制度化。</td><td>预算、储蓄、合约、定价、风险分散。</td></tr>
+<tr><td>感情</td><td>关系中要少测试，多说明。</td><td>把不安拆成事实与请求。</td></tr>
+<tr><td>健康</td><td>金土重，需要流动与热度。</td><td>力量训练、快走、饮水、睡眠、伸展。</td></tr>
+<tr><td>副业</td><td>适合报告、模板、资料整理、命理与策略服务。</td><td>把复杂信息变成可购买、可使用的产品。</td></tr>
+<tr><td>2026</td><td>火来炼金，机会与压力同到。</td><td>先立规则，再接机会；先稳身体，再冲事业。</td></tr>
+</tbody></table></section>
+
+<div class="section-title" id="analysis"><h2>十六、七政八字深度结论</h2><span class="badge">Long Synthesis</span></div>
+<section class="grid">
+
+  <article class="accordion open">
+    <button class="acc-btn"><span><span class="acc-title">1. 七政与八字共同指向：Howard 的底色是“金”</span><span class="acc-sub">Seven Stars / Bazi Synthesis 1</span></span><span class="acc-icon">＋</span></button>
+    <div class="acc-content"><p>七政四余显示命度主金、身度主金，八字则是辛金日主，生于酉月建禄。两套系统同时强调金，说明 Howard 的核心不是模糊、松散、随波逐流，而是精密、判断、标准、审美、切割和边界。金的高阶是把复杂问题切开，把杂乱资料整理出标准，把人情与欲望放回规则里；金的低阶则是挑剔、冷硬、过度防御、难以放松。对他来说，人生修炼不是变成没有刀锋的人，而是学会什么时候出刀、什么时候收刀。</p></div>
+  </article>
+
+
+  <article class="accordion open">
+    <button class="acc-btn"><span><span class="acc-title">2. 辛金建禄说明他有强标准，但也容易把自己逼得太紧</span><span class="acc-sub">Seven Stars / Bazi Synthesis 2</span></span><span class="acc-icon">＋</span></button>
+    <div class="acc-content"><p>辛金生于酉月，建禄身旺，这是一种很有根的日主状态。它让 Howard 对品质、专业、准确度和体面有天然要求。他不太能忍受粗糙、混乱、敷衍和逻辑漏洞，也因此适合做分析、审查、策略、命理资料、保险金融、AI 工具、健康数据等需要精细判断的领域。但身旺并不代表轻松，反而代表标准太强时会先压自己。若没有水的流动和火的温度，辛金会越磨越冷，最后变成内耗。</p></div>
+  </article>
+
+
+  <article class="accordion ">
+    <button class="acc-btn"><span><span class="acc-title">3. 卯酉冲是关系、财与价值感的核心震荡</span><span class="acc-sub">Seven Stars / Bazi Synthesis 3</span></span><span class="acc-icon">＋</span></button>
+    <div class="acc-content"><p>八字中最关键的结构是卯酉冲。酉为月令，是辛金的根；卯在日支，是夫妻宫，也带有财星意味。月支与日支相冲，说明关系、现实价值、资源、亲密安全感和自我标准之间会反复碰撞。Howard 可能一边被柔软、有生命力、有资源感的人或机会吸引，一边又会用非常高的标准审查它们。关系里越在乎，越容易挑剔；金钱上越想要安全，越容易焦虑。成熟方向是建立透明规则，而不是靠猜测和控制维持安全感。</p></div>
+  </article>
+
+
+  <article class="accordion ">
+    <button class="acc-btn"><span><span class="acc-title">4. 戊子大运不是单纯好运或坏运，而是“学习—输出—重建系统”的十年</span><span class="acc-sub">Seven Stars / Bazi Synthesis 4</span></span><span class="acc-icon">＋</span></button>
+    <div class="acc-content"><p>24 至 33 岁走戊子大运，戊为正印，子带食神意味。这组大运很适合学习、考证、建立知识体系、整理资料、输出内容、修复生活节奏。它不是叫 Howard 躺在安全区里只吸收，也不是叫他盲目冲刺，而是要求他一边吸收、一边表达。正印太重会变成想太多、等准备好才开始；食神被堵住则会让才华无法释放。因此，这十年的关键不是一直学，而是把学到的东西变成报告、工具、服务和长期可见的作品。</p></div>
+  </article>
+
+
+  <article class="accordion ">
+    <button class="acc-btn"><span><span class="acc-title">5. 2026 丙午是火来炼金：机会与压力会一起出现</span><span class="acc-sub">Seven Stars / Bazi Synthesis 5</span></span><span class="acc-icon">＋</span></button>
+    <div class="acc-content"><p>2026 丙午流年，丙火透出、午火当令，对辛金来说是明显的外部压力与可见度。丙辛合会带来关系、目标、身份或机会对自我的牵引；子午冲则让大运与流年直接对冲，容易带来情绪波动、方向变化、身体节奏被打乱；子卯刑又会刺激亲密关系与内在安全感。火可以炼金，让辛金成器；但火太猛也会灼金，让人急躁、冲突、过度消耗。2026 的关键是：所有机会都要有计划承接，所有关系和金钱承诺都要写清楚。</p></div>
+  </article>
+
+
+  <article class="accordion ">
+    <button class="acc-btn"><span><span class="acc-title">6. 八字里的火弱，说明行动力需要被设计，而不是靠情绪爆发</span><span class="acc-sub">Seven Stars / Bazi Synthesis 6</span></span><span class="acc-icon">＋</span></button>
+    <div class="acc-content"><p>命局金土重，火不显，只藏于戌中。火代表热度、行动、外放、可见压力和生命燃烧感。火弱时，人不一定没有野心，而是容易先想、先算、先担心，真正启动时却需要外部压力。低阶表现是平时压抑，压力大时突然爆发；高阶做法是主动设计火的炉灶：固定运动、公开输出、阶段目标、有限时挑战、明确 deadline。火不是要乱烧，而是要被放进炉子里，成为持续锻造辛金的温度。</p></div>
+  </article>
+
+
+  <article class="accordion ">
+    <button class="acc-btn"><span><span class="acc-title">7. 最终七政八字结论：金要有水，刀要有鞘，火要有炉</span><span class="acc-sub">Seven Stars / Bazi Synthesis 7</span></span><span class="acc-icon">＋</span></button>
+    <div class="acc-content"><p>Howard 的七政八字核心可以总结为三句话：金要有水，刀要有鞘，火要有炉。金要有水，代表判断力需要流动、表达、休息与情绪疏导；刀要有鞘，代表锋利必须有边界和使用时机，不要随时刺向自己或他人；火要有炉，代表行动力和欲望需要被安排进运动、创作、事业目标与公开输出。只要他能让金不再僵硬，让火不再失控，让水持续流动，他就能把高标准从压力变成专业，把冲突从内耗变成炼金。</p></div>
+  </article>
+
+</section>
+</main>
+<button class="float" id="topBtn">↑</button>
+</div>
+
+<script>
+const s2tMap = {"这":"這","个":"個","点":"點","觉":"覺","体":"體","关":"關","系":"係","统":"統","后":"後","资":"資","数":"數","据":"據","库":"庫","宫":"宮","与":"與","万":"萬","专":"專","业":"業","现":"現","简":"簡","开":"開","门":"門","档":"檔","画":"畫","过":"過","运":"運","动":"動","灵":"靈","历":"曆","玛":"瑪","亚":"亞","红":"紅","龙":"龍","风":"風","险":"險","错":"錯","认":"認","为":"為","无":"無","压":"壓","绪":"緒","气":"氣","断":"斷","结":"結","构":"構","权":"權","钱":"錢","财":"財","务":"務","声":"聲","应":"應","该":"該","类":"類","选":"選","择":"擇","题":"題","问":"問","输":"輸","复":"複","制":"製","时":"時","间":"間","郑":"鄭","岁":"歲","阴":"陰","阳":"陽","贵":"貴","独":"獨","双":"雙","长":"長","学":"學","习":"習","疗":"療","愈":"癒","职":"職","场":"場","稳":"穩","爱":"愛","实":"實","验":"驗","浅":"淺","蝎":"蠍","处":"處","狮":"獅","献":"獻","责":"責","备":"備","识":"識","创":"創","见":"見","触":"觸","发":"發","冲":"衝","击":"擊","读":"讀","观":"觀","内":"內","层":"層","测":"測","试":"試","逻":"邏","辑":"輯","标":"標","签":"籤","语":"語","条":"條","辅":"輔","轴":"軸","态":"態","强":"強","异":"異","轻":"輕","艺":"藝","医":"醫","顾":"顧","师":"師","从":"從","来":"來","写":"寫","听":"聽","说":"說","里":"裡","线":"線","阶":"階","级":"級","迁":"遷","变":"變","总":"總","怀":"懷","价":"價","质":"質","极":"極","给":"給","带":"帶","还":"還","显":"顯","隐":"隱","让":"讓","样":"樣","张":"張","战":"戰","争":"爭","飞":"飛","禄":"祿","盘":"盤","补":"補","护":"護","闭":"閉","启":"啟","须":"須","则":"則","众":"眾","炼":"煉","涌":"湧","欲":"慾","仓":"倉","节":"節","调":"調","层":"層","细":"細","证":"證","验":"驗","伤":"傷","药":"藥","余":"餘","农":"農","宝":"寶","锋":"鋒","锐":"銳","双":"雙","义":"義","岁":"歲","学习":"學習","输出":"輸出","炼":"煉","炉":"爐","财":"財","亲":"親"};
+function toTraditional(str){return str.split("").map(ch=>s2tMap[ch]||ch).join("")}
+let traditional=localStorage.getItem("soul_lang")==="trad";let originalText=new WeakMap();
+function convertPage(){const walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT,{acceptNode(node){if(!node.nodeValue.trim())return NodeFilter.FILTER_REJECT;if(node.parentElement&&["SCRIPT","STYLE"].includes(node.parentElement.tagName))return NodeFilter.FILTER_REJECT;return NodeFilter.FILTER_ACCEPT;}});const nodes=[];while(walker.nextNode())nodes.push(walker.currentNode);nodes.forEach(node=>{if(!originalText.has(node))originalText.set(node,node.nodeValue);node.nodeValue=traditional?toTraditional(originalText.get(node)):originalText.get(node);});document.getElementById("langBtn").textContent=traditional?"繁":"简";}
+document.querySelectorAll(".acc-btn").forEach(btn=>btn.onclick=()=>btn.closest(".accordion").classList.toggle("open"));
+document.getElementById("themeBtn").onclick=()=>{const isDark=document.documentElement.classList.toggle("dark");localStorage.setItem("soul_theme",isDark?"dark":"light");document.getElementById("themeBtn").textContent=isDark?(traditional?"天蠍黑":"天蝎黑"):(traditional?"辛金銀":"辛金银");};
+document.getElementById("langBtn").onclick=()=>{traditional=!traditional;localStorage.setItem("soul_lang",traditional?"trad":"simp");convertPage();};
+document.getElementById("topBtn").onclick=()=>scrollTo({top:0,behavior:"smooth"});
+document.getElementById("openDrawer").onclick=()=>document.getElementById("drawer").classList.add("open");
+document.getElementById("closeDrawer").onclick=()=>document.getElementById("drawer").classList.remove("open");
+document.getElementById("drawer").onclick=e=>{if(e.target.id==="drawer")document.getElementById("drawer").classList.remove("open");};
+if((localStorage.getItem("soul_theme")||"dark")==="dark")document.documentElement.classList.add("dark");else document.documentElement.classList.remove("dark");
+convertPage();
+</script>
+</body>
+</html>
